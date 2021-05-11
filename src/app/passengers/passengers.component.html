@@ -11,71 +11,210 @@
     <div class="pas-action">
         <button class="btn-list-view">List View</button>
         <div class="d-flex flex-column align-items-center">
-            <button class="btn-action">Action</button>
+
+            <div class="dropdown">
+                <button class="btn-action" id="dropBtn" (click)="openActionDropdown()" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Action</button>
+                <div class="dropdown-menu" style="right:0" aria-labelledby="dropBtn">
+                    <a class="dropdown-item">Edit</a>
+                    <a class="dropdown-item">Block</a>
+                    <a class="dropdown-item">Delete</a>
+                    <hr>
+                    <a class="dropdown-item">Create Custom Charge</a>
+                    <a class="dropdown-item">Add a Ticket</a>
+                </div>
+
+
+            </div>
             <p class="pid">Profile ID:4555</p>
         </div>
     </div>
 </div>
 <div class="pas-tab-cn">
     <mat-tab-group mat-align-tabs="start" (onTabChanged)="change()">
-        <mat-tab label="Profile">Content 1</mat-tab>
+        <mat-tab label="Passenger Info">
+            <div class="wrr">
+                <div class="info-wr">
+                    <div class="dtl">
+                        <h4>Details</h4>
+                        <h6>Show Less</h6>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="ac-wr">
+                                <h1>Account Information</h1>
+                                <div>
+                                    <h3>Registration Date</h3>
+                                    <h4>May 11 2021 07:49</h4>
+                                </div>
+                                <div>
+                                    <h3>Last Login</h3>
+                                    <h4>May 11 2021 07:49</h4>
+                                </div>
+                                <div>
+                                    <h3>Referral Code</h3>
+                                    <h4 class="ref">G67UYT658</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <div class="vrule">
+                                <div class="vr"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="rides-wr">
+                                <h1>Rides Information</h1>
+                                <div class="rides-outer">
+                                    <div class="rides-inner">
+                                        <h3>Total Lapsed</h3>
+                                        <h4>0</h4>
+                                    </div>
+                                    <div class="rides-inner">
+                                        <h3>Total Completed</h3>
+                                        <h4>0</h4>
+                                    </div>
+                                </div>
+                                <div class="rides-outer">
+                                    <div class="rides-inner">
+                                        <h3>Total Request</h3>
+                                        <h4>10</h4>
+                                    </div>
+                                    <div class="rides-inner">
+                                        <h3>Total Regular</h3>
+                                        <h4>10</h4>
+                                    </div>
+                                </div>
+                                <div class="rides-outer">
+                                    <div class="rides-inner">
+                                        <h3>Rides Cancelled</h3>
+                                        <h4>7</h4>
+                                    </div>
+                                    <div class="rides-inner">
+                                        <h3>Total Scheduled</h3>
+                                        <h4>0</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rides-n-pref">
+                <div class="rides-n">
+                    <h1>Rides and Preferences</h1>
+                    <div class="d-flex">
+                        <button>Export CSV</button>
+                        <div class="search-wr">
+                            <div><img src="/assets/images/search.png"></div>
+                            <input type="search" placeholder="Search">
+                        </div>
+                    </div>
+                </div>
+                <div class="pag">
+                    <pagination-controls class="my-pagination" (pageChange)="p=$event"></pagination-controls>
+                    <mat-tab-group mat-align-tabs="start">
+                        <mat-tab label="Regular Rides">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Affiliate ID</th>
+                                        <th>Affiliate Name</th>
+                                        <th>Affiliate Email</th>
+                                        <th>Mobile</th>
+                                        <th>Registration</th>
+                                        <th>Device</th>
+                                        <th>Block</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr *ngFor="let doc of docs | paginate:{itemsPerPage:5,currentPage:p}">
+                                        <td>{{doc.aid}}</td>
+                                        <td><img src="/assets/images/lindsey.png">{{doc.aname}}</td>
+                                        <td>{{doc.aemail}}</td>
+                                        <td>{{doc.amob}}</td>
+                                        <td>{{doc.reg}}</td>
+                                        <td>{{doc.dev}}</td>
+                                        <td>{{doc.block}}</td>
+                                        <td>
+                                            <div><img src="/assets/images/dots3.png"></div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </mat-tab>
+                        <mat-tab label="Scheduled Rides">
+                            <h1>Scheduled</h1>
+                        </mat-tab>
+                    </mat-tab-group>
+                </div>
+            </div>
+        </mat-tab>
         <mat-tab label="Documents">Content 2</mat-tab>
         <mat-tab label="Payout Methods">Content 3</mat-tab>
         <mat-tab label="Car Base Affiliation">
             <div class="d-flex justify-content-between" style="padding: 20px;">
                 <h3>Car Base Information</h3>
-                <button class="edt-dtl" data-toggle="modal" data-target="#exa" (click)="openModel1()">Edit Detail</button> 
+                <button class="edt-dtl" data-toggle="modal" data-target="#exa" (click)="openModel1()">Edit
+                    Detail</button>
                 <!-- Modal -->
                 <div class="modal" id="exa" role="dialog">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Edit Car Based Affiliation</h5>
-                      </div>
-                      <div class="modal-body">
-                      <div class="cur">
-                          <label>Current</label>
-                          <div>
-                              <img src="/assets/images/user.png">
-                          </div>
-                          <label>Name of Business Name longest LLC State, Country</label>
-                      </div>
-<div class="trk">
-                      <div class="nm-wr">
-                          <label style="margin-right: 30px;">Name</label>
-                          
-                          <div class="select-box">
-                            <div class="options-container">
-                                <div class="search-built-in">
-                                    <input placeholder="Search Car Base" [(ngModel)]="searchTerm" (keyup)="heyChange()">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Edit Car Based Affiliation</h5>
+                            </div>
+                            <div class="modal-body">
+                                <div class="cur">
+                                    <label>Current</label>
                                     <div>
-                                        <img src="/assets/images/search.png">
+                                        <img src="/assets/images/user.png">
+                                    </div>
+                                    <label>Name of Business Name longest LLC State, Country</label>
+                                </div>
+                                <div class="trk">
+                                    <div class="nm-wr">
+                                        <label style="margin-right: 30px;">Name</label>
+
+                                        <div class="select-box">
+                                            <div class="options-container">
+                                                <div class="search-built-in">
+                                                    <input placeholder="Search Car Base" [(ngModel)]="searchTerm"
+                                                        (keyup)="heyChange()">
+                                                    <div>
+                                                        <img src="/assets/images/search.png">
+                                                    </div>
+                                                </div>
+                                                <div *ngFor="let opt of opts | searchDropdown : searchTerm">
+                                                    <div class="option">
+                                                        <!-- <input type="radio" class="radio" id="{{opt.id}}" name="category"> -->
+                                                        <label>{{opt.main}}<span>{{opt.aux}}</span></label>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="selected">
+                                                Select New Car Based Affliation
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="foo">
+                                        <button type="button" class="btn btn-danger" (click)="closeModel()"
+                                            data-dismiss="modal">Cancel</button>
+                                        <button type="button" data-dismiss="modal" (click)="saveModel()" class="btn btn-primary">Save</button>
                                     </div>
                                 </div>
-                                <div *ngFor="let opt of opts | searchDropdown : searchTerm">
-                                <div class="option">
-                                    <!-- <input type="radio" class="radio" id="{{opt.id}}" name="category"> -->
-                                    <label>{{opt.main}}<span>{{opt.aux}}</span></label>
-                                </div>
+                            </div>
 
-                            </div>
-                            </div>
-                      
-                            <div class="selected">
-                                Select New Car Based Affliation
-                            </div>
-                     
                         </div>
-                      </div>
-                      <div class="foo">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                        <button type="button" data-dismiss="modal" class="btn btn-primary">Save</button>
-                      </div>
                     </div>
-                    </div>
-                 
-                    </div>
-                  </div>
                 </div>
             </div>
             <div class="form-group">

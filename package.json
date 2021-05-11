@@ -23,6 +23,7 @@
     "@angular/router": "~10.1.4",
     "apexcharts": "^3.26.1",
     "ng-apexcharts": "^1.5.9",
+    "ngx-pagination": "^5.0.0",
     "bootstrap": "^5.0.0",
     "intl-tel-input": "^17.0.12",
     "jquery": "^3.6.0",

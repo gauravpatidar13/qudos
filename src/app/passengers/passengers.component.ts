@@ -11,19 +11,31 @@ declare var $: any;
 export class PassengersComponent implements OnInit, AfterViewInit {
   searchTerm;
   opts;
+  p = 0;
+  docs;
+  one=true;
+  selected;optionsContainer;optionsList;
   constructor(private fdl: FetchDropdownListService) {
     this.fdl.fetchDropdownList().subscribe(data => {
       this.opts = data;
     })
-
+    this.fdl.fetchData().subscribe(data => {
+      this.docs = data;
+    })
   }
   change() {
     console.log('change tab')
   }
   ngAfterViewInit(): void {
-
+    let drop = $(".dropdown-menu")[0];
+    let lists = $(".dropdown-item");
+ 
+    for (let i = 0; lists.length; i++) {
+      lists[i].addEventListener("click", () => {
+      drop.classList.toggle("drop-show")
+      })
+    }
   }
-
   ngOnInit(): void {
     $('a[data-toggle="tab"]').click(function () {
       alert($(this))
@@ -31,35 +43,45 @@ export class PassengersComponent implements OnInit, AfterViewInit {
 
   }
   openModel1() {
-    $('#exa').css({ "display": "block" })
-    let selected = document.querySelector('.selected');
-    let optionsContainer = document.querySelector('.options-container');
-    let optionsList = document.querySelectorAll(".option");
-    selected.addEventListener("click", () => {
-      optionsContainer.classList.toggle("active");
-    });
+    this.selected = document.querySelector('.selected');
+    this.optionsContainer = document.querySelector('.options-container');
+  this.optionsList = document.querySelectorAll(".option");
+  this.selected.addEventListener("click", () => {
+    this.optionsContainer.classList.toggle("active");
+  });
 
-    optionsList.forEach(o => {
+  this.optionsList.forEach(o => {
+    o.addEventListener('click', () => {
+      this.selected.innerHTML = o.querySelector('label').innerHTML;
+      this.optionsContainer.classList.remove('active')
+    })
+  })
+    $('#exa').css({ "display": "block" })
+  }
+  closeModel(){
+    $('#exa').css({ "display": "none" })
+  }
+  saveModel(){
+    $('#exa').css({ "display": "none" })
+  }
+  heyChange() {
+  
+    // this.selected = document.querySelector('.selected');
+    this.optionsContainer = document.querySelector('.options-container');
+    this.optionsList = document.querySelectorAll(".option");
+    // this.selected.addEventListener("click", () => {
+    //   this.optionsContainer.classList.toggle("active");
+    // });
+
+    this.optionsList.forEach(o => {
       o.addEventListener('click', () => {
-        selected.innerHTML = o.querySelector('label').innerHTML;
-        console.log(optionsContainer)
-        optionsContainer.classList.remove('active')
+        this.selected.innerHTML = o.querySelector('label').innerHTML;
+        this.optionsContainer.classList.remove('active')
       })
     })
   }
-  heyChange() {
-    let selected = document.querySelector('.selected');
-    let optionsContainer = document.querySelector('.options-container');
-    let optionsList = document.querySelectorAll(".option");
-    selected.addEventListener("click", () => {
-      optionsContainer.classList.toggle("active");
-    });
-
-    optionsList.forEach(o => {
-      o.addEventListener('click', () => {
-        selected.innerHTML = o.querySelector('label').innerHTML;
-        optionsContainer.classList.remove('active')
-      })
-    })
+  openActionDropdown() {
+    let drop = $(".dropdown-menu")[0];
+    drop.classList.toggle("drop-show");
   }
 }

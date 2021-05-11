@@ -14,6 +14,7 @@ import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { SearchDropdownPipe } from './search-dropdown.pipe';
+import {NgxPaginationModule} from 'ngx-pagination';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import { SearchDropdownPipe } from './search-dropdown.pipe';
     BrowserAnimationsModule,
     Ng2TelInputModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

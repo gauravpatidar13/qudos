@@ -9,6 +9,38 @@
 ::ng-deep .mat-ink-bar{
     visibility: visible!important;
 }
+::ng-deep .mat-tab-label-active .mat-tab-label-content{
+    color:rgb(6, 6, 82);
+    font-weight: bold;
+}
+.my-pagination{
+    position: relative;
+    right: 0;
+}
+.my-pagination .ngx-pagination{
+    margin-bottom: 0;
+}
+.my-pagination /deep/ .ngx-pagination li a{
+   text-decoration: none;
+   font-size: 14px;
+   font-weight: 100;
+   color:lightslategray;
+}
+.my-pagination /deep/ .ngx-pagination li.disabled span{
+    color:lightslategray;
+}
+
+.my-pagination /deep/ .ngx-pagination .current{
+    background:transparent;
+    border-bottom: 2px solid blue;
+}
+.my-pagination /deep/ .ngx-pagination li span{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 100;
+    color:lightslategray;
+}
+
 .pas-header{
     display: flex;
     justify-content: space-between;
@@ -277,4 +309,184 @@ div.nm-wr{
 }
 .foo button{
     margin:0 10px;
+}
+.info-wr{
+    padding:20px;
+}
+.info-wr .dtl{
+padding:10px;
+}
+.info-wr .dtl h4{
+font-size: 20px;
+font-weight: bold;
+display: inline;
+font-family: monospace;
+}
+.info-wr .dtl h6{
+    font-size: 14px;
+    color:cornflowerblue;
+    font-weight: 500;
+    margin-left: 30px;
+    display: inline;
+    font-family: monospace;
+}
+.ac-wr h3{
+    display: inline;
+    font-size: 16px;
+    font-family: cursive;
+    font-weight: 900;
+    color:lightslategray;
+}
+.ac-wr h1,.rides-wr h1{
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    color:#000;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.ac-wr div{
+    display: flex;
+    justify-content: space-between;
+    margin:15px 0;
+    width: 100%;
+    position: relative;
+}
+
+.ac-wr h4{
+    display: inline;
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: 600;
+    color:#000;
+}
+.ac-wr h4.ref{
+    min-width: 130px;
+}
+.rides-wr .rides-outer{
+    display: flex;
+    justify-content: space-between;
+}
+.rides-wr .rides-inner{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 40%;
+}
+.rides-inner h3{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: cursive;
+    color:lightslategray;
+}
+.rides-inner h4{
+    font-size: 15px;
+    font-weight: 900;
+    font-family: monospace;
+}
+.vrule{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vrule .vr{
+    width: 1px;
+    height: 80%;
+    background:lightslategray;
+}
+.rides-outer{
+    margin:15px 0;
+}
+.wrr{
+    padding-bottom: 35px;
+    border-bottom: 1px solid lightslategray;
+}
+.dropdown-menu .dropdown-item{
+    font-size: 14px;
+    font-weight: bold;
+}
+.rides-n{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 10px;
+}
+.rides-n-pref{
+    padding-top: 30px;
+}
+.rides-n h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+    font-family: monospace;
+}
+.rides-n button{
+    background:transparent;
+    color:lightslategray;
+    font-weight: 300;
+    border:1px solid lightslategray;
+    border-radius: 6px;
+    width: 180px;
+    height: 45px;
+    font-size: 14px;
+}
+.rides-n .search-wr{
+    padding:5px 10px;
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 5px;
+    display: flex;
+    border:1px solid lightslategray;
+    border-radius: 6px;
+
+}
+.search-wr img{
+    margin-right: 10px;
+}
+.rides-n input{
+    outline: none;
+    border:none;
+font-size: 14px;
+color:lightslategray;
+font-weight: 500;
+   width: 150px;
+}
+th{
+    color:lightslategrey;
+    font-weight: 700;
+    font-size: 14px!important;
+    padding:15px 10px !important;
+    border-bottom: none;
+}
+td{
+    font-size: 14px!important;
+    font-weight: 500;
+    color:rgb(130, 135, 146);
+    padding:15px 10px;
+}
+td img{
+    margin-right: 8px;
+}
+tbody tr:hover{
+    cursor: pointer;
+}
+tbody tr:hover{
+    background: rgb(248,250,252);
+}
+.pag{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+.pag .my-pagination{
+position: absolute;
+right: 0;
+top:0;
+z-index: 4;
+}
+.drop-show{
+    display: block;
 }
