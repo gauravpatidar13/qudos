@@ -1,0 +1,141 @@
+<div class="pas-header">
+    <div class="pas-profile">
+        <div>
+            <img src="/assets/images/lindsey.png">
+        </div>
+        <div class="pas-profile-info">
+            <h3>Lindsey Stroud</h3>
+            <h4>lindsey.stroud@gmail.com</h4>
+        </div>
+    </div>
+    <div class="pas-action">
+        <button class="btn-list-view">List View</button>
+        <div class="d-flex flex-column align-items-center">
+            <button class="btn-action">Action</button>
+            <p class="pid">Profile ID:4555</p>
+        </div>
+    </div>
+</div>
+<div class="pas-tab-cn">
+    <mat-tab-group mat-align-tabs="start" (onTabChanged)="change()">
+        <mat-tab label="Profile">Content 1</mat-tab>
+        <mat-tab label="Documents">Content 2</mat-tab>
+        <mat-tab label="Payout Methods">Content 3</mat-tab>
+        <mat-tab label="Car Base Affiliation">
+            <div class="d-flex justify-content-between" style="padding: 20px;">
+                <h3>Car Base Information</h3>
+                <button class="edt-dtl" data-toggle="modal" data-target="#exa" (click)="openModel1()">Edit Detail</button> 
+                <!-- Modal -->
+                <div class="modal" id="exa" role="dialog">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Edit Car Based Affiliation</h5>
+                      </div>
+                      <div class="modal-body">
+                      <div class="cur">
+                          <label>Current</label>
+                          <div>
+                              <img src="/assets/images/user.png">
+                          </div>
+                          <label>Name of Business Name longest LLC State, Country</label>
+                      </div>
+<div class="trk">
+                      <div class="nm-wr">
+                          <label style="margin-right: 30px;">Name</label>
+                          
+                          <div class="select-box">
+                            <div class="options-container">
+                                <div class="search-built-in">
+                                    <input placeholder="Search Car Base" [(ngModel)]="searchTerm" (keyup)="heyChange()">
+                                    <div>
+                                        <img src="/assets/images/search.png">
+                                    </div>
+                                </div>
+                                <div *ngFor="let opt of opts | searchDropdown : searchTerm">
+                                <div class="option">
+                                    <!-- <input type="radio" class="radio" id="{{opt.id}}" name="category"> -->
+                                    <label>{{opt.main}}<span>{{opt.aux}}</span></label>
+                                </div>
+
+                            </div>
+                            </div>
+                      
+                            <div class="selected">
+                                Select New Car Based Affliation
+                            </div>
+                     
+                        </div>
+                      </div>
+                      <div class="foo">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        <button type="button" data-dismiss="modal" class="btn btn-primary">Save</button>
+                      </div>
+                    </div>
+                    </div>
+                 
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Car Base Name</label>
+                <input type="text" class="form-control" style="margin-left:20px" value="Car someting">
+            </div>
+            <div class="form-group">
+                <label>Registration Date</label>
+                <input type="text" class="form-control" value="10 May,2021">
+            </div>
+            <div class="form-group">
+                <label>Car Referrel Code</label>
+                <input type="text" class="form-control" value="FFY557JU8">
+            </div>
+        </mat-tab>
+        <mat-tab label="Invite Links">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="pas-inv">
+                            <h3>Passenger invite links</h3>
+                            <h5>Send rider app install link to new driver</h5>
+                        </div>
+                    </div>
+                    <div class="col-xl-2">
+                        <button class="btn-send">Send</button>
+                    </div>
+                    <div class="col-xl-2">
+                        <button class="btn-copy-link">Copy Link</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="pas-inv">
+                            <h3>Affiliate invite links</h3>
+                            <h5>Send rider app install link to new driver</h5>
+                        </div>
+                    </div>
+                    <div class="col-xl-2">
+                        <button class="btn-send">Send</button>
+                    </div>
+                    <div class="col-xl-2">
+                        <button class="btn-copy-link">Copy Link</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="pas-inv">
+                            <h3>Corporate invite links</h3>
+                            <h5>send rider app install link to new driver new corporate account</h5>
+                        </div>
+                    </div>
+                    <div class="col-xl-2">
+                        <button class="btn-send">Send</button>
+                    </div>
+                    <div class="col-xl-2">
+                        <button class="btn-copy-link">Copy Link</button>
+                    </div>
+                </div>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+</div>

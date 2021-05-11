@@ -1,0 +1,64 @@
+.common-header{
+    display: flex;
+    justify-content: space-between;
+}
+.users-comp-heading h2{
+    font-size: 23px;
+}
+.common-header .com-wr h2{
+    font-size: 23px;
+}
+.common-header .com-wr{
+    display: flex;
+    align-items: center;
+}
+.common-header .com-wr h4{
+color:rgb(49, 127, 221);
+font-size: 16px;
+font-weight: 500;
+margin-left: 20px;
+cursor: pointer;
+}
+.btn-view-list{
+    background:#fff;
+    border-radius: 3px;
+    font-size: 14px;
+    border:1px solid lightslategrey;
+    color:gray;
+    font-weight: 700;
+    font-family: monospace;
+    height: 40px;
+    padding:0 25px;
+}
+th{
+    color:lightslategrey;
+    font-weight: 700;
+    font-size: 14px!important;
+    padding:15px 10px !important;
+}
+.comport{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.comport .common-header{
+    margin:15px 0px;
+}
+
+td{
+    font-size: 14px!important;
+    font-weight: 500;
+    color:rgb(130, 135, 146);
+    padding:15px 10px;
+}
+td img{
+    margin-right: 8px;
+}
+tbody tr:hover{
+    cursor: pointer;
+}
+tbody tr:hover{
+    background: rgb(248,250,252);
+}
+.comport:last-child{
+    margin-bottom: 0;
+}

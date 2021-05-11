@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.circle{
+    width: 6px;
+    height: 6px;
+    background: gray;
+    border-radius: 50%;
+}
+::ng-deep .mat-tab-label{
+    width: 10px!important;
+    height: 10px!important;
+    padding:0 5px!important;
+    min-width: 10px!important;
+}
+::ng-deep mat-ink-bar{
+    visibility: hidden!important;
+    width: 10px;
+}
+::ng-deep .mat-tab-label-active .mat-tab-label-content .circle{
+    width: 6px;
+    height: 6px;
+    background: blue;
+    border-radius: 50%;
+}
+::ng-deep .mat-tab-header{
+    border-bottom: none;
+}
+.card{
+    width: max-content;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+}
+.tabcontent1{
+    padding:30px;
+}
+.tabcontent1 label{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin:15px 0; 
+}
+.tabcontent1 select{
+    color:lightslategrey;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    padding:10px 5px;
+    border:1px solid lightslategrey;
+    border-radius: 5px;
+
+    margin-bottom: 15px;
+}
+.btn.btn-primary{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+.tblue{
+    cursor: pointer;
+    color:blue;
+}
+.tabcontent1 p{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
+.tabcontent2 label{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+.tabcontent2 input{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color:lightslategrey;
+    padding:6px 5px;
+    border:1px solid lightslategrey;
+    border-radius: 3px;
+    width: 250px;
+}
+.tabcontent2 select{
+    width: 250px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color:lightslategrey;
+    padding:6px 0;
+    border-radius: 4px;
+}
+.tabcontent2 span{
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    color:lightslategrey;
+    text-align: justify;
+    display: inline-block;
+    line-height: 16px!important;
+    width: 550px!important;
+}
+.tabcontent2 input[type="checkbox"]{
+    width: auto;
+    margin-right:8px;
+    margin-left: 12px;
+}
+.btn-blue{
+    color:#fff;
+    border:none;
+    position: relative;
+    background:#141479;
+    font-size: 14px;
+    margin-left: 50%;
+    margin-top: 30px;
+    transform: translate(-50%,0);
+    font-family: 'Poppins', sans-serif;
+    width: 260px;
+    height: 40px;
+}
+.select-box{
+    display: flex;
+    width: 280px;
+    flex-direction: column;
+}
+.select-box .options-container{
+    background: #fff;
+    color: #000;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all .5s;
+    border-radius: 8px;
+    order: 1;
+    border: 1px solid lightgrey;
+    overflow: hidden;
+}
+
+.select-box .options-container.active{
+    opacity: 1;
+    max-height: 160px;
+}
+.select-box .options-container.active + .selected::after{
+    transform: rotateX(180deg);
+    top:4px;
+
+}
+.select-box .options-container::-webkit-scrollbar{
+    width: 8px;
+    background:#0d141f;
+    border-radius: 0 8px 8px 0px;
+}
+.select-box .options-container::-webkit-scrollbar-thumb{
+    background:#525861;
+    border-radius: 0 8px 8px 0px;
+}
+.select-box .option,.selected{
+    padding:5px 10px;
+    cursor: pointer;
+}
+.selected{
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 2px;
+    color: #000;
+    padding-left: 8px;
+    padding-right: 0;
+    font-size: 14px;
+    font-family: 'Poppins';
+    position: relative;
+    order: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid lightslategrey;
+}
+.selected::after{
+    content: "";
+    background: url("/assets/images/down.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    right:10px;
+    top:15px;
+    transition: all 0.5s;
+}
+.select-box .option:hover{
+    background:#f3f5f7;
+}
+.select-box label{
+    cursor: pointer;
+}
+.select-box .option .radio{
+    display: none;
+}
+.tabcontent3{
+    padding:20px;
+    width: 350px;
+    overflow: hidden; 
+}
+.tabcontent3 input{
+    width: 100%;
+    padding:6px 0;
+}
+.tabcontent3 h4,h5{
+    font-size: 14px;
+    font-family: 'Poppins';
+    margin:10px 0;
+}
+.tabcontent3 h6{
+    font-size: 14px;
+    font-family: 'Poppins';
+    margin:10px 0;   
+    font-weight: 300;
+}
+.tabcontent3 p{
+    font-size: 12px;
+    font-family: "Poppins";
+}
+.tabcontent3 .btn-blue{
+    margin:10px 0;
+    width: 250px;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+}
+.tabcontent3 input{
+    padding-left: 10px;
+    border-radius: 4px;
+    border:1px solid lightslategrey;
+    margin-left: 2px;
+    outline: none;
+}
+.tabcontent3 input:active{
+    outline: none;
+}
+.pug{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 200px;
+}
+.focusdiv{
+    width: 550px;
+    position: absolute;
+    top: 80px;
+    background: #fff;
+    }
+.focusdivz{
+    z-index: -4;
+}

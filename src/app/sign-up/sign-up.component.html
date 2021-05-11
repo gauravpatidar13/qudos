@@ -1,0 +1,138 @@
+<div class="card">
+    <div class="card-body">
+        <h6 class="text-center">Client Sign Up</h6>
+
+        <mat-tab-group mat-align-tabs="center" disableRipple [selectedIndex]="selectedIndex">
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <span class="circle"></span>
+                </ng-template>
+
+                <div class="d-flex flex-column tabcontent1">
+                    <label>Which country are you in?</label>
+                    <select>
+                        <option>Select Your Country</option>
+                        <option>India</option>
+                    </select>
+                    <button class="btn btn-primary" (click)="goto2()">Continue</button>
+                    <p>Already have an client account?<span class="tblue">Login</span></p>
+                </div>
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <span class="circle"></span>
+                </ng-template>
+                <div class="d-flex flex-column tabcontent2">
+                    <form #mForm="ngForm" (ngSubmit)="data(mForm.value)">
+                        <div class="d-flex justify-content-between" style="margin:6px 10px;width:550px;">
+                            <div class="d-flex flex-column">
+                                <label>Firstname</label>
+                                <input type="text" placeholder="Firstname">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label>Lastname</label>
+                                <input type="text" placeholder="Lastname">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between" style="margin:6px 10px;width:550px;">
+                            <div class="d-flex flex-column">
+                                <label>Email</label>
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label>Mobile Number</label>
+                                <input type="text" ng2TelInput placeholder="Enter mobile number" name="phone" ngModel
+                                    style="padding-left: 50px;">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between" style="margin:6px 10px;width:550px;">
+                            <div class="d-flex flex-column">
+                                <label>Create Password</label>
+                                <input type="password" placeholder="Create new password">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label>Confirm Password</label>
+                                <input type="password" placeholder="Confirm Password">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between" style="margin:6px 10px;width:550px;">
+                            <div class="d-flex flex-column">
+                                <label>State</label>
+                                <select>
+                                    <option>Select Option</option>
+                                    <option>Madhya Pradesh</option>
+                                </select>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <label>Zip Code</label>
+                                <input type="number" placeholder="Enter zipcode">
+                            </div>
+                        </div>
+                        <div class="pug">
+                            <div class="d-flex justify-content-between" style="margin:6px 10px;width:550px;">
+                                <div class="d-flex flex-column">
+                                    <label>Number of Vehicles Owned</label>
+
+                                    <div class="select-box">
+                                        <div class="options-container">
+                                            <div class="option">
+                                                <input type="radio" class="radio" id="films" name="category">
+                                                <label for="films">Below $1000</label>
+                                            </div>
+
+                                            <div class="option">
+                                                <input type="radio" class="radio" id="science" name="category">
+                                                <label for="science">$1000 to $2000</label>
+                                            </div>
+                                            <div class="option">
+                                                <input type="radio" class="radio" id="science" name="category">
+                                                <label for="science">Above $2000</label>
+                                            </div>
+                                        </div>
+                                        <div class="selected">
+                                            Select number of vehicles owened
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <label>Last Year Revenue</label>
+                                    <select>
+                                        <option>Select last year revenue</option>
+                                        <option>below $10,000</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div style="width: 550px;" class="d-flex mt-3 focusdiv">
+                                <input type="checkbox">
+                                <span>By clicking next Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+                                    adipisci.
+                                    Explicabo, non harum eveniet repellendus error accusantium eaque autem laboriosam
+                                    suscipit nulla
+                                    soluta officia consequatur sequi quis animi! Consectetur, nostrum!</span>
+                            </div>
+                        </div>
+                        <button type="submit" (click)="goto3()" class="btn-blue">Continue</button>
+                    </form>
+                </div>
+            </mat-tab>
+            <mat-tab active>
+                <ng-template mat-tab-label>
+                    <span class="circle"></span>
+                </ng-template>
+                <div class="tabcontent3">
+                    <h4>Confirm Your Mobile Number</h4>
+                    <h6>Enter OTP sent to your Mobile number</h6>
+                    <input type="text" placeholder="0&nbsp;0&nbsp;0&nbsp;0">
+                    <div class="d-flex justify-content-between">
+                        <h5>Resend OTP</h5>
+                        <h5>Change Mobile Number</h5>
+                    </div>
+                    <button type="submit" class="btn-blue">Submit</button>
+                    <p class="text-center">Already have an client account?<span class="tblue">Login</span></p>
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+
+    </div>
+</div>
