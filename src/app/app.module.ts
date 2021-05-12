@@ -18,6 +18,12 @@ import {NgxPaginationModule} from 'ngx-pagination';
 import { DriversComponent } from './drivers/drivers.component';
 import { CarBaseSearchPipe } from './car-base-search.pipe';
 import { AffilatesComponent } from './affilates/affilates.component';
+import { CorporatesComponent } from './corporates/corporates.component';
+import { CustomPayoutComponent } from './custom-payout/custom-payout.component';
+import { DisputesComponent } from './disputes/disputes.component';
+import { RidesComponent } from './rides/rides.component';
+import { ReportsComponent } from './reports/reports.component';
+import { SettingsComponent } from './settings/settings.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +36,13 @@ import { AffilatesComponent } from './affilates/affilates.component';
     SearchDropdownPipe,
     DriversComponent,
     CarBaseSearchPipe,
-    AffilatesComponent
+    AffilatesComponent,
+    CorporatesComponent,
+    CustomPayoutComponent,
+    DisputesComponent,
+    RidesComponent,
+    ReportsComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,

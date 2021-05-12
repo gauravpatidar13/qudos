@@ -1,0 +1,76 @@
+.corporates-profile{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightslategrey;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.corporates-profile .prof{
+    display: flex;
+    align-items: center;
+}
+
+.corporates-profile .prof-dt{
+    margin-left: 20px;
+}
+.corporates-profile .prof-dt h3{
+font-size: 24px;
+}
+.corporates-profile .prof-dt h4{
+font-size: 16px;
+}
+.corporates-profile .pro-act h6{
+font-size: 12px;
+font-weight: bold;
+text-align: right;
+}
+.btn-list-view{
+    height: 35px;
+    width: 120px;
+}
+.btn-list-view.big{
+    width: 160px;
+}
+.feed-details {
+    padding-bottom: 25px;
+    border-bottom: 1px solid lightslategrey;
+    margin-bottom: 25px;
+}
+.feed-details.ls{
+    border-bottom: none!important;
+}
+.feed-details .feed-hd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 12px;
+}
+.feed-details .feed-hd .feed-h h4{
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 0;
+}
+.feed-details .feed-hd .feed-h h4 span{
+    color:blue;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: normal;
+}
+.feed-prop{
+    padding:4px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.feed-prop h5{
+font-size: 14px;
+color:lightslategrey;
+font-weight: 700;
+font-family: monospace;
+}
+.feed-prop h6{
+font-size: 12px;
+font-family: monospace;
+min-width: 50%;
+text-align: left;
+}

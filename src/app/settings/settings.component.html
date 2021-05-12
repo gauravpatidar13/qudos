@@ -1,0 +1,51 @@
+<div class="car-types-lst">
+    <div class="car-types-hdr">
+        <h1>List of Car Types and Rates</h1>
+        <div class="acts">
+            <button class="btn-list-view">Add Car Type</button>
+            <div class="search-w">
+                <div>
+                    <img src="/assets/images/search.png">
+
+                </div>
+                <input type="search" placeholder="Search">
+            </div>
+        </div>
+    </div>
+    <mat-tab-group>
+        <mat-tab label="List of Car Types">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Car Type</th>
+                        <th>Fixed Fare</th>
+                        <th>Minimum Fare</th>
+                        <th>Fare per Mile</th>
+                        <th>Fare per min</th>
+                        <th>Black Car Fund</th>
+                        <th>Sales Tax</th>
+                        <th>Cancellation Time</th>
+                        <th>Cancellation Fee</th>
+                        <th>Car</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let c of cs">
+                        <td>1</td>
+                        <td>GRANDE 7max</td>
+                        <td>4</td>
+                        <td>10</td>
+                        <td>14</td>
+                        <td>12</td>
+                        <td>2.5</td>
+                        <td>8.875</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td><img src="/assets/images/car.png"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </mat-tab>
+    </mat-tab-group>
+</div>

@@ -1,0 +1,70 @@
+.rides-profile{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightslategray;
+    margin-bottom: 20px;
+}
+.rides-profile .prof-dt{
+    display: flex;
+    align-items: center;
+}
+.rides-profile .prof-dt h3{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: monospace;
+    margin-bottom: 0;
+}
+.rides-profile .prof-dt h6{
+    font-size: 12px;
+    font-family: monospace;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+.rides-profile .pro-alist{
+    display: flex;
+    align-items: center;
+}
+.btn-list-view{
+    height: 32px;
+}
+
+.pro-alist .btn-action{
+    margin-bottom: 0;
+}
+.disp-details .qwer{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 0px;
+padding-bottom: 20px;
+}
+.disp-details{
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightslategray;
+}
+.disp-prop{
+    display: flex;
+    justify-content: space-between;
+    padding:5px 0;
+}
+.disp-details h3{
+   text-transform: uppercase;
+   font-size: 16px;
+   margin-bottom: 0;
+   font-weight: bold; 
+}
+.disp-prop h5{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: monospace;
+    color: lightslategray;
+}
+.disp-prop h6{
+    font-size: 12px;
+    font-weight: 100;
+    font-family: cursive;
+    min-width: 285px;
+    text-align: left;
+}
