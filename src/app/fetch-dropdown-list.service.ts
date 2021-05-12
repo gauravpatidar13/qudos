@@ -6,11 +6,14 @@ import { Injectable } from '@angular/core';
 })
 export class FetchDropdownListService {
 
-  constructor(private http:HttpClient) { }
-  fetchDropdownList(){
-return this.http.get('/assets/data/dropdown.json');
+  constructor(private http: HttpClient) { }
+  fetchDropdownList() {
+    return this.http.get('/assets/data/dropdown.json');
   }
-  fetchData(){
+  fetchData() {
     return this.http.get('/assets/data/data.json');
-      }
+  }
+  fetchCarbaseDrop() {
+    return this.http.get('/assets/data/carbase-drop.json');
+  }
 }

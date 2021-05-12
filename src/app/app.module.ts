@@ -15,6 +15,9 @@ import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { SearchDropdownPipe } from './search-dropdown.pipe';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { DriversComponent } from './drivers/drivers.component';
+import { CarBaseSearchPipe } from './car-base-search.pipe';
+import { AffilatesComponent } from './affilates/affilates.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,10 @@ import {NgxPaginationModule} from 'ngx-pagination';
     PassengersComponent,
     SignUpComponent,
     HomeComponent,
-    SearchDropdownPipe
+    SearchDropdownPipe,
+    DriversComponent,
+    CarBaseSearchPipe,
+    AffilatesComponent
   ],
   imports: [
     BrowserModule,

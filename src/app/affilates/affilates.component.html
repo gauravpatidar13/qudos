@@ -1,0 +1,396 @@
+<div class="affilates-profile">
+    <div class="prof-dt">
+        <h3>Lindsey Stroud</h3>
+        <h4>lindsey.stroud@gmail.com</h4>
+    </div>
+    <div class="pro-act">
+        <div class="pro-alist">
+            <button class="btn-list-view">List View</button>
+            <button class="btn-action">Action</button>
+        </div>
+        <h6>Profile ID: 4555</h6>
+    </div>
+</div>
+
+<mat-tab-group>
+    <mat-tab label="Client">
+        <div class="affilate-content">
+            <mat-tab-group>
+                <mat-tab label="Client Info">
+                    <div class="affilate-info">
+                        <div class="drv">
+                            <div class="d-flex">
+                                <h4>Client Info</h4>
+                                <h6>Show Less</h6>
+                            </div>
+                            <button class="btn-list-view" (click)="openEditDetail()">Edit Details</button>
+                            <div class="modal" id="exa2"  role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Edit Client Info</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                          <div class="we"> 
+                                              <div class="container">
+                                                  <div class="row crow" style="display: flex;">
+                                                      <div class="fg1">
+                                                        <div class="form-group">
+                                                            <label>First Name</label>
+                                                            <input type="text" [(ngModel)]="client.fname">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Last Name</label>
+                                                            <input type="text" [(ngModel)]="client.lname">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Email</label>
+                                                            <input type="email" [(ngModel)]="client.email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Phone</label>
+                                                            <input type="text" [(ngModel)]="client.phone">
+                                                        </div>
+                                                      </div>
+                                                      <div class="fg2">
+                                                        <div class="form-group">
+                                                            <label>Registration Date</label>
+                                                            <input type="text" [(ngModel)]="client.rdate">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Zipcode</label>
+                                                            <input type="text" [(ngModel)]="client.zipcode">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Passport Number</label>
+                                                            <input type="text" [(ngModel)]="client.passportno">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>DMV Licence</label>
+                                                            <input type="text" [(ngModel)]="client.DMVLic">
+                                                        </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              
+                                          </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <button type="button" class="btn-action cancel" (click)="closeModel()"
+                                                data-dismiss="modal">Cancel</button>
+                                            <button type="button" data-dismiss="modal" (click)="saveModel()" class="btn-action">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="ac-info">
+                        <h3>Account Information</h3>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-4">
+                                    <div class="ac-prop">
+                                        <h4>Full Name</h4>
+                                        <h5>James Bond</h5>
+                                    </div>
+                                    <div class="ac-prop">
+                                        <h4>Business Name</h4>
+                                        <h5>James Bond LLC</h5>
+                                    </div>
+                                    <div class="ac-prop">
+                                        <h4>Email</h4>
+                                        <h5>example@gmail.com</h5>
+                                    </div>
+                                    <div class="ac-prop">
+                                        <h4>Phone</h4>
+                                        <h5>123456789</h5>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4">
+                                    <div class="ac-prop">
+                                        <h4>Registration Date</h4>
+                                        <h5>Generic</h5>
+                                    </div>
+                                    <div class="ac-prop">
+                                        <h4>Zip Code</h4>
+                                        <h5>Generic</h5>
+                                    </div>
+                                    <div class="ac-prop">
+                                        <h4>Passport Number</h4>
+                                        <h5>81258878</h5>
+                                    </div>
+                                    <div class="ac-prop">
+                                        <h4>DMV Licence</h4>
+                                        <h5>Texas</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rides-info">
+                        <div class="d-flex align-items-center" style="padding-bottom: 30px;">
+                            <h3 class="rnf">Rides Information</h3>
+                            <h6 class="sh-mo">Show Less</h6>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-2">
+                                    <div class="rd-info">
+                                        <h5>Total Completed</h5>
+                                        <h6>0</h6>
+                                    </div>
+                                    <div class="rd-info">
+                                        <h5>Total Request</h5>
+                                        <h6>10</h6>
+                                    </div>
+                                    <div class="rd-info">
+                                        <h5>Rides Cancelled</h5>
+                                        <h6>7</h6>
+                                    </div>
+                                </div>
+                                <div class="col-xl-1"></div>
+                                <div class="col-xl-2">
+                                    <div class="rd-info">
+                                        <h5>Total Lapsed</h5>
+                                        <h6>3</h6>
+                                    </div>
+                                    <div class="rd-info">
+                                        <h5>Total Regular</h5>
+                                        <h6>10</h6>
+                                    </div>
+                                    <div class="rd-info">
+                                        <h5>Total Scheduled</h5>
+                                        <h6>0</h6>
+                                    </div>
+                                </div>
+                                <div class="col-xl-1"></div>
+                                <div class="col-xl-2">
+                                    <div class="rd-info">
+                                        <h5>Total Corporate</h5>
+                                        <h6>3</h6>
+                                    </div>
+                                    <div class="rd-info">
+                                        <h5>Total Drivers</h5>
+                                        <h6>10</h6>
+                                    </div>
+                                    <div class="rd-info">
+                                        <h5>Total Riders</h5>
+                                        <h6>0</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="rides-n-pref">
+                        <div class="rides-n">
+                            <h1>Rides and Preferences</h1>
+                            <div class="d-flex">
+                                <button>Export CSV</button>
+                                <div class="search-wr">
+                                    <div><img src="/assets/images/search.png"></div>
+                                    <input type="search" placeholder="Search">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pag">
+                            <pagination-controls class="my-pagination" (pageChange)="p=$event"></pagination-controls>
+                            <mat-tab-group mat-align-tabs="start">
+                                <mat-tab label="Regular Rides">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Affiliate ID</th>
+                                                <th>Affiliate Name</th>
+                                                <th>Affiliate Email</th>
+                                                <th>Mobile</th>
+                                                <th>Registration</th>
+                                                <th>Device</th>
+                                                <th>Block</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr *ngFor="let doc of docs | paginate:{itemsPerPage:5,currentPage:p}">
+                                                <td>{{doc.aid}}</td>
+                                                <td><img src="/assets/images/lindsey.png">{{doc.aname}}</td>
+                                                <td>{{doc.aemail}}</td>
+                                                <td>{{doc.amob}}</td>
+                                                <td>{{doc.reg}}</td>
+                                                <td>{{doc.dev}}</td>
+                                                <td>{{doc.block}}</td>
+                                                <td>
+                                                    <div><img src="/assets/images/dots3.png"></div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </mat-tab>
+                                <mat-tab label="Scheduled Rides">
+                                    <h1>Scheduled</h1>
+                                </mat-tab>
+                            </mat-tab-group>
+                        </div>
+                    </div>
+                </mat-tab>
+                <mat-tab label="Car Rates">
+                    rates car
+                </mat-tab>
+                <mat-tab label="Options (QudosCustom)">
+                    qudos custom
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+    </mat-tab>
+    <mat-tab label="Client Document">
+        Document content
+    </mat-tab>
+    <mat-tab label="Notes">
+        notes content
+    </mat-tab>
+    <mat-tab label="Client Settings">
+        <mat-tab-group>
+            <mat-tab label="Documents Type">
+                <div class="doc-type-con">
+                    <h2>Driver Document Type</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Action
+                                </th>
+                                <th>
+                                    Document Type ID
+                                </th>
+                                <th>
+                                    Document Name
+                                </th>
+                                <th>
+                                    Document Type
+                                </th>
+                                <th>    
+                                    Date and Time Enabled/Disabled
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" checked>
+                                </td>
+                                <td><img src="/assets/images/lindsey.png">Lindsey Stroud</td>
+                                <td>lindsey.stored@gmail.com</td>
+                                <td>Driver</td>
+                                <td>+1-435566723</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox">
+                                </td>
+                                <td><img src="/assets/images/lindsey.png">Lindsey Stroud</td>
+                                <td>lindsey.stored@gmail.com</td>
+                                <td>Driver</td>
+                                <td>+1-435566723</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="doc-type-con">
+                    <h2>Affiliate Document Type</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Action
+                                </th>
+                                <th>
+                                    Document Type ID
+                                </th>
+                                <th>
+                                    Document Name
+                                </th>
+                                <th>
+                                    Document Type
+                                </th>
+                                <th style="min-width: 230px;">    
+                                    Date Added
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" checked>
+                                </td>
+                                <td><img src="/assets/images/lindsey.png">Lindsey Stroud</td>
+                                <td>lindsey.stored@gmail.com</td>
+                                <td>Driver</td>
+                                <td>+1-435566723</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   
+                                </td>
+                                <td><img src="/assets/images/lindsey.png">Lindsey Stroud</td>
+                                <td>lindsey.stored@gmail.com</td>
+                                <td>Driver</td>
+                                <td>+1-435566723</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="doc-type-con">
+                    <h2>Corporate Document Type</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Action
+                                </th>
+                                <th>
+                                    Document Type ID
+                                </th>
+                                <th>
+                                    Document Name
+                                </th>
+                                <th>
+                                    Document Type
+                                </th>
+                                <th style="min-width: 230px;">    
+                                    Date Added
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" checked>
+                                </td>
+                                <td><img src="/assets/images/lindsey.png">Lindsey Stroud</td>
+                                <td>lindsey.stored@gmail.com</td>
+                                <td>Driver</td>
+                                <td>+1-435566723</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   
+                                </td>
+                                <td><img src="/assets/images/lindsey.png">Lindsey Stroud</td>
+                                <td>lindsey.stored@gmail.com</td>
+                                <td>Driver</td>
+                                <td>+1-435566723</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </mat-tab>
+            <mat-tab label="Car Rates">car rates</mat-tab>
+            <mat-tab label="Options (QudosCustom)">qudos custom</mat-tab>
+        </mat-tab-group>
+    </mat-tab>
+</mat-tab-group>

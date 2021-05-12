@@ -4,3 +4,25 @@
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Poppins' }
+.btn-list-view{
+    background:#fff;
+    border-radius: 3px;
+    font-size: 14px;
+    border:1px solid lightslategrey;
+    color:gray;
+    font-weight: 700;
+    font-family: monospace;
+    height: 40px;
+    padding:0 25px;
+}
+.btn-action{
+    border:none;
+    color:#fff;
+    font-size: 12px;
+    width: 130px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    border-radius: 4px;
+    background:rgb(40,108,189);
+    height: 35px;
+}

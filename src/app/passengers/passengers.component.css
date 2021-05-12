@@ -61,31 +61,11 @@
 .pas-profile-info h4{
     font-size: 18px;
 }
-.btn-list-view{
-    background:#fff;
-    border-radius: 3px;
-    font-size: 14px;
-    border:1px solid lightslategrey;
-    color:gray;
-    font-weight: 700;
-    font-family: monospace;
-    height: 40px;
-    padding:0 25px;
-}
+
 .pas-action{
     display: flex;
 }
-.btn-action{
-    border:none;
-    color:#fff;
-    font-size: 12px;
-    width: 130px;
-    margin-bottom: 10px;
-    margin-left: 12px;
-    border-radius: 4px;
-    background:rgb(40,108,189);
-    height: 35px;
-}
+
 .pas-action p.pid{
     font-size: 12px;
     font-weight: bold;
