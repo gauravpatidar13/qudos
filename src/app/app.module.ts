@@ -24,6 +24,8 @@ import { DisputesComponent } from './disputes/disputes.component';
 import { RidesComponent } from './rides/rides.component';
 import { ReportsComponent } from './reports/reports.component';
 import { SettingsComponent } from './settings/settings.component';
+import { CarSearchPipe } from './car-search.pipe';
+import { HomePendingComponent } from './home-pending/home-pending.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +44,9 @@ import { SettingsComponent } from './settings/settings.component';
     DisputesComponent,
     RidesComponent,
     ReportsComponent,
-    SettingsComponent
+    SettingsComponent,
+    CarSearchPipe,
+    HomePendingComponent
   ],
   imports: [
     BrowserModule,

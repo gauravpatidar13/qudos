@@ -1,17 +1,300 @@
-<div class="car-types-lst">
+<div class="reports">
+    <div class="headii">
+        <h1>Settings</h1>
+    </div>
+   <div class="container">
+       <div class="row">
+           <div class="col-xl-4">
+               <div class="rp-wr bb br">
+                   <h6>General</h6>
+                   <p>View all General Settings</p>
+                   <a>Car Types</a>
+                   <a>Affilate Types</a>
+                   <a>Document Type</a>
+               </div>
+           </div>
+           <div class="col-xl-4">
+            <div class="rp-wr bb br">
+                <h6>View Users</h6>
+                <p>View all Users</p>
+                <a>Dashboard Users</a>
+                <a>Live Map Users</a>
+                <a>Admin Users</a>
+            </div>
+        </div>
+        <div class="col-xl-4">
+            <div class="rp-wr bb">
+                <h6>Area</h6>
+                <p>View of area</p>
+                <a>Area List</a>
+            </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-xl-4">
+            <div class="rp-wr bb br">
+                <h6>Other Settings</h6>
+                <p>View Other Settings</p>
+                <a>Point Setting</a>
+                <a>Payment Setting</a>
+            </div>
+        </div>
+        <div class="col-xl-4">
+         <div class="rp-wr bb br">
+             <h6>Car Types,Rates & Option Settings</h6>
+             <p>View Car Rates & Option Settings</p>
+             <a>Car Types & Rates Setting</a>
+             <a>Options Setting</a>
+         </div>
+     </div>
+    </div>
+   </div>
+</div>
+<!-- part 2 starts-->
+<div class="car-types-lst" style="display: none;">
     <div class="car-types-hdr">
         <h1>List of Car Types and Rates</h1>
         <div class="acts">
-            <button class="btn-list-view">Add Car Type</button>
+            <button class="btn-list-view" (click)="openAddCarModal()">Add Car Type</button>
+            <div class="modal" id="exa3" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Add Car Type</h5>
+                        </div>
+                        <div class="modal-body">
+                            <mat-tab-group id="inner" mat-align-tabs="end">
+                                <mat-tab label="Ride Info and Fare Rates">
+                                    <div class="container-fluid" style="padding-top:20px;">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="car-prop">
+                                                    <label>Car Type Name</label>
+                                                    <input type="text" placeholder="Enter Car Type Name">
+                                                </div>
+                                                <div class="car-prop">
+                                                    <label>Qudos Ride Transaction ($)</label>
+                                                    <select id="sel1">
+                                                        <option>0.30</option>
+                                                        <option>0.60</option>
+                                                    </select>
+                                                </div>
+                                                <div class="car-prop">
+                                                    <label>Base Fare</label>
+                                                    <select id="sel1">
+                                                        <option>4,000</option>
+                                                        <option>6,000</option>
+                                                    </select>
+                                                </div>
+                                                <div class="car-prop2">
+                                                    <div>
+                                                        <label class="lb1">Base Fare %<br>(Driver Share)</label>
+                                                        <input class="inp1" type="text" value="0.80">
+                                                    </div>
+                                                    <div>
+                                                        <label>Base Fare %<br>(Client Share)</label>
+                                                        <input class="inp2" type="text" value="0.20">
+                                                    </div>
+                                                </div>
+                                                <div class="car-prop2">
+                                                    <div>
+                                                        <label class="lb1">Base Fare $<br>(Driver Share)</label>
+                                                        <input class="inp1" disabled type="text" value="3,200">
+                                                    </div>
+                                                    <div>
+                                                        <label>Base Fare $<br>(Client Share)</label>
+                                                        <input class="inp2" disabled type="text" value="0,800">
+                                                    </div>
+                                                </div>
+                                                <div class="car-prop2">
+                                                    <div>
+                                                        <label class="lb1">Base Fare<br>(Qudos Share)</label>
+                                                        <input class="inp1" disabled type="text" value="0.100">
+                                                    </div>
+
+                                                </div>
+                                                <div class="car-prop">
+                                                    <label>Fare per Minute</label>
+                                                    <select id="sel1">
+                                                        <option>4,000</option>
+                                                        <option>6,000</option>
+                                                    </select>
+                                                </div>
+                                                <div class="car-prop2">
+                                                    <div>
+                                                        <label class="lb1">Fare per Min %<br>(Driver Share)</label>
+                                                        <input class="inp1" type="text" value="0.80">
+                                                    </div>
+                                                    <div>
+                                                        <label>Fare per Min %<br>(Client Share)</label>
+                                                        <input class="inp2" type="text" value="0.20">
+                                                    </div>
+                                                </div>
+                                                <div class="car-prop2">
+                                                    <div>
+                                                        <label class="lb1">Fare per Min $<br>(Driver Share)</label>
+                                                        <input class="inp1" disabled type="text" value="3,200">
+                                                    </div>
+                                                    <div>
+                                                        <label>Fare per Min $<br>(Client Share)</label>
+                                                        <input class="inp2" disabled type="text" value="0,800">
+                                                    </div>
+                                                </div>
+                                                <div class="car-prop2">
+                                                    <div>
+                                                        <label class="lb1">Fare per Min $<br>(Qudos Share)</label>
+                                                        <input class="inp1" disabled type="text" value="0.100">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="car-prop">
+                                                    <label>Capacity</label>
+                                                    <select id="sel1">
+                                                        <option>Enter Seating Capacity</option>
+                                                        <option>60</option>
+                                                        <option>40</option>
+                                                        <option>20</option>
+                                                    </select>
+                                                </div>
+                                                <div class="car-prop">
+                                                    <label>Qudos Ride Processing (%)</label>
+                                                    <input type="text" value="0.025">
+                                                </div>
+                                                <div class="car-prop">
+                                                    <label>Fare per Mile</label>
+                                                    <select id="sel1">
+                                                        <option>4,000</option>
+                                                        <option>6,000</option>
+                                                    </select>
+                                                </div>
+                                                <div class="car-prop2">
+                                                    <div>
+                                                        <label class="lb1">Fare per Mile %<br>(Driver Share)</label>
+                                                        <input class="inp1" type="text" value="0.80">
+                                                    </div>
+                                                    <div>
+                                                        <label>Fare per Mile %<br>(Client Share)</label>
+                                                        <input class="inp2" type="text" value="0.20">
+                                                    </div>
+                                                </div>
+                                                <div class="car-prop2">
+                                                    <div>
+                                                        <label class="lb1">Fare per Mile $<br>(Driver Share)</label>
+                                                        <input class="inp1" disabled type="text" value="3,200">
+                                                    </div>
+                                                    <div>
+                                                        <label>Fare per Mile $<br>(Client Share)</label>
+                                                        <input class="inp2" disabled type="text" value="0,800">
+                                                    </div>
+                                                </div>
+                                                <div class="car-prop2">
+                                                    <div>
+                                                        <label class="lb1">Fare per Mile $<br>(Qudos Share)</label>
+                                                        <input class="inp1" disabled type="text" value="0.100">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </mat-tab>
+                                <mat-tab label="Other Ride Rates">
+                                    <div class="container-fluid" style="padding-top:20px;">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <div class="car-prop">
+                                                    <label>Black Car Fund (%)</label>
+                                                    <select id="sel1">
+                                                        <option>0.8</option>
+                                                        <option>0.6</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="car-prop">
+                                                    <label>Sales Tax (%)</label>
+                                                    <input type="text" value="0.025">
+                                                </div>
+                                                <div class="car-prop">
+                                                    <label>Cancellation Time (Min)</label>
+                                                    <select id="sel1">
+                                                        <option>4,0</option>
+                                                        <option>6,0</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="car-prop">
+                                                    <label>Cancellation Fee ($)</label>
+                                                    <select id="sel1">
+                                                        <option>0.10</option>
+                                                        <option>0.20</option>
+                                                    </select>
+                                                </div>
+                                                <div class="car-prop">
+                                                    <label>Fare Factor</label>
+                                                    <select id="sel1">
+                                                        <option>0.68</option>
+                                                        <option>0.32</option>
+                                                    </select>
+                                                </div>
+                                                <div class="car-prop">
+                                                    <label>Surcharge Fee</label>
+                                                    <select id="sel1">
+                                                        <option>2.70</option>
+                                                        <option>3.20</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <div class="car-prop">
+                                                    <label>Minimum Fare-Regular</label>
+                                                    <select id="sel1">
+                                                        <option>0.68</option>
+                                                        <option>0.97</option>
+                                                    </select>
+                                                </div>
+                                                <div class="car-prop">
+                                                    <label>Minimum Fare-Scheduled</label>
+                                                    <select id="sel1">
+                                                        <option>2.27</option>
+                                                        <option>3.97</option>
+                                                    </select>
+                                                </div>
+                                                <div class="car-prop">
+                                                    <label>Insaurance Cost per Mile</label>
+                                                    <select id="sel1">
+                                                        <option>0.68</option>
+                                                        <option>2.27</option>
+                                                    </select>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </mat-tab>
+                            </mat-tab-group>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn-action btn-cancel" (click)="closeModel()"
+                                data-dismiss="modal">Cancel</button>
+                            <button type="button" data-dismiss="modal" (click)="saveModel()"
+                                class="btn-action">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="search-w">
                 <div>
                     <img src="/assets/images/search.png">
 
                 </div>
-                <input type="search" placeholder="Search">
+                <input type="search" placeholder="Search" [(ngModel)]="sTerm">
             </div>
         </div>
     </div>
+    <pagination-controls class="my-pagination" (pageChange)="p=$event"></pagination-controls>
     <mat-tab-group>
         <mat-tab label="List of Car Types">
             <table class="table">
@@ -31,9 +314,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let c of cs">
-                        <td>1</td>
-                        <td>GRANDE 7max</td>
+                    <tr *ngFor="let c of cars | paginate:{itemsPerPage:5,currentPage:p} | carSearch:sTerm">
+                        <td>{{c.sno}}</td>
+                        <td>{{c.type}}</td>
                         <td>4</td>
                         <td>10</td>
                         <td>14</td>
@@ -49,3 +332,4 @@
         </mat-tab>
     </mat-tab-group>
 </div>
+<!-- part 2 ends-->

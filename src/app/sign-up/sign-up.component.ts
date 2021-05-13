@@ -35,7 +35,6 @@ goto2(){
 this.selectedIndex="1";
 }
 goto3(){
-  alert('yes')
   this.selectedIndex="2";
 }
 data(fom){

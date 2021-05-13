@@ -104,11 +104,9 @@
     position: relative;
     background:#141479;
     font-size: 14px;
-    margin-left: 50%;
     margin-top: 30px;
-    transform: translate(-50%,0);
     font-family: 'Poppins', sans-serif;
-    width: 260px;
+    width: -webkit-fill-available;
     height: 40px;
 }
 .select-box{
@@ -159,7 +157,6 @@
     padding-left: 8px;
     padding-right: 0;
     font-size: 14px;
-    font-family: 'Poppins';
     position: relative;
     order: 0;
     padding-top: 8px;
@@ -190,11 +187,14 @@
 .tabcontent3{
     padding:20px;
     width: 350px;
-    overflow: hidden; 
+    /* overflow: hidden;  */
 }
 .tabcontent3 input{
     width: 100%;
     padding:6px 0;
+}
+.btn-blue{
+    background:rgb(40, 108, 189);
 }
 .tabcontent3 h4,h5{
     font-size: 14px;
@@ -209,13 +209,11 @@
 }
 .tabcontent3 p{
     font-size: 12px;
-    font-family: "Poppins";
+    font-family: monospace;
 }
 .tabcontent3 .btn-blue{
     margin:10px 0;
-    width: 250px;
-    margin-left: 50%;
-    transform: translate(-50%,0);
+    width: -webkit-fill-available;
 }
 .tabcontent3 input{
     padding-left: 10px;
@@ -241,4 +239,44 @@
     }
 .focusdivz{
     z-index: -4;
+}
+.tabcontent4{
+padding:30px;
+}
+.tabcontent4 h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-align: center;
+    color:rgb(40, 108, 189);
+}
+.tabcontent4 h4{
+    font-weight: bold;
+    color:#000;
+    font-size: 14px;
+    text-align: center;
+    font-family: monospace;
+}
+.tabcontent4 h6{
+    font-weight: bold;
+    color:#000;
+    font-size: 14px;
+    text-align: center;
+    font-style: oblique;
+    font-family: monospace; 
+}
+.tabcontent4 p{
+    color:lightslategray;
+    font-size: 12px;
+    font-family: monospace;
+    margin-top: 20px;
+}
+.tabcontent4 span.th{
+    color:lightslategray;
+    font-size: 12px;
+    font-family: monospace;
+    margin-top: 20px;
+    width: 300px;
+    display: block;
 }

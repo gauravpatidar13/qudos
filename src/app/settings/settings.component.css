@@ -1,6 +1,90 @@
+.reports .headii h1{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.reports .headii{
+    padding-bottom: 20px;
+    padding-top:20px;
+    border-bottom: 1px solid lightslategray;
+}
+.rp-wr{
+    padding-top: 12px;
+    padding-bottom: 20px;
+    min-height: 180px;
+}
+.rp-wr h6{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: monospace;
+}
+.rp-wr p{
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-family: monospace;
+    cursor: pointer;
+}
+.rp-wr.big{
+    min-height: auto;
+}
+.rp-wr a{
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin:5px 0;
+    font-family: cursive;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    color:rgba(67, 67, 139, 0.822);
+}
+.bt{
+    border-top: 1px solid lightslategray;
+}
+.bb{
+    border-bottom: 1px solid lightslategray;
+}
+.bl{
+    border-left: 1px solid lightslategray;
+}
+.br{
+    border-right: 1px solid lightslategray;
+}
+/*part 2 css starts*/
 ::ng-deep .mat-tab-label-active .mat-tab-label-content{
     color:blue!important;
     font-weight: bold;
+}
+::ng-deep .my-pagination .current {
+    padding: 0.1875rem 0.625rem;
+    background: none!important;
+    border-bottom: 2px solid #2199e8;
+    color: #2199e8!important;
+    cursor: default;
+}
+::ng-deep .my-pagination ul{
+    margin-bottom: 0;
+    text-align: right;
+    margin-top: 25px;
+    margin-bottom: -45px;
+    position: relative;
+    z-index: 8;
+}
+::ng-deep .my-pagination li{
+    font-size: 18px;
+}
+::ng-deep .my-pagination ul li span{
+    font-size: 16px;
+    font-family: monospace;
+}
+::ng-deep .my-pagination li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: monospace;
+}
+::ng-deep mat-tab-group#inner .mat-tab-header{
+margin-top: -70px!important;
+border-bottom: none;
 }
 .car-types-hdr{
     padding:6px 8px;
@@ -51,3 +135,96 @@ tbody tr td{
     font-size: 14px;
     font-family: monospace;
 }
+.modal-dialog{
+    max-width: 1030px;
+}
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    font-family: monospace;
+}
+.card-footer{
+    text-align: right;
+}
+.modal-body{
+    background:#f3f7f8;
+    height: 70vh;
+}
+.btn-cancel{
+    background:rgb(169, 169, 247);
+}
+.car-prop{
+    display: flex;
+    padding:8px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.car-prop input{
+    height: 26px;
+    font-size: 14px;
+    font-family: monospace;
+    padding-left: 10px;
+    width: 247px;
+    border-radius: 3px;
+    border: 1px solid lightslategray;
+}
+.car-prop label{
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: right;
+    min-width: 200px;
+}
+select#sel1{
+    width: 247px;
+    font-size: 14px;
+    height: 26px;
+    border:1px solid lightslategray;
+    border-radius: 3px;
+    font-family: monospace;
+}
+.car-prop2{
+    display: flex;
+    justify-content: space-between;
+    padding:8px 0;
+}
+
+.car-prop2 div{
+    display: flex;
+}
+.car-prop2 label{
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: bold;
+}
+.car-prop2 label.lb1{
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: right;
+    min-width: 200px;
+}
+.car-prop2 input.inp2{
+    height: 26px;
+    font-size: 14px;
+    font-family: monospace;
+    padding-left: 10px;
+    width: 76px;
+    margin-left: 5px;
+    border-radius: 3px;
+    border: 1px solid lightslategray;
+}
+.car-prop2 input.inp1{
+    height: 26px;
+    font-size: 14px;
+    font-family: monospace;
+    padding-left: 10px;
+    width: 76px;
+    margin-left: 18px;
+    border-radius: 3px;
+    border: 1px solid lightslategray;
+}
+/*part 2 css ends*/

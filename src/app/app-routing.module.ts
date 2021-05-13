@@ -12,9 +12,11 @@ import { DisputesComponent } from './disputes/disputes.component';
 import { RidesComponent } from './rides/rides.component';
 import { ReportsComponent } from './reports/reports.component';
 import { SettingsComponent } from './settings/settings.component';
+import { HomePendingComponent } from './home-pending/home-pending.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  { path: 'home-pending', component: HomePendingComponent },
   { path: 'users/passengers', component: PassengersComponent },
   { path: 'users/drivers', component: DriversComponent },
   { path: 'users/affilates', component: AffilatesComponent },

@@ -16,4 +16,7 @@ export class FetchDropdownListService {
   fetchCarbaseDrop() {
     return this.http.get('/assets/data/carbase-drop.json');
   }
+  fetchCarList(){
+    return this.http.get('/assets/data/car-list.json');
+  }
 }

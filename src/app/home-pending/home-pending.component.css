@@ -1,0 +1,99 @@
+.home-pending .home-header{
+    padding-top: 25px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid lightslategray;
+}
+.home-pending .home-header h3{
+font-size: 18px;
+font-weight: bold;
+font-family: monospace;
+}
+.home-pending .home-header h6{
+    color:blue;
+    font-size: 12px;
+    font-family: monospace;
+}
+.home-pending .home-header h5{
+    margin-left: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: monospace;
+}
+.pending-steps{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid lightslategray;
+    margin-bottom: 30px;
+}
+.pending-steps a{
+    list-style: none;
+    font-size: 12px;
+    display: block;
+    cursor: pointer;
+    padding:5px 0;
+    font-weight: bold;
+    font-family: monospace;
+    color:rgb(14, 181, 231)
+}
+.gross-volumn-chart-wr .hddr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gross-volumn-chart-wr .hddr .tm{
+    display: flex;
+    align-items: center;
+}
+.gross-volumn-chart-wr .hddr select{
+    font-size: 14px;
+    font-weight: bold;
+    border:none;
+    outline: none;
+    margin-left: 15px;
+}
+.gross-volumn-chart-wr .hddr .tm label,.slld label{
+    font-size: 12px;
+}
+.gross-volumn-chart-wr .hddr .tm select,.slld select{
+    font-size: 10px;
+    font-weight: bold;
+    border:none;
+    color:blue;
+    margin-right: 30px;
+    outline: none;   
+}
+.bal-card,.reports-overview-card{
+    display: flex;
+    justify-content: space-between;
+  border-top:1px solid #f3f7f8;
+  border-bottom: 1px solid #f3f7f8;
+  border-left-color: transparent;
+  border-right-color: transparent;
+    padding:15px 10px;
+    border-radius: 4px;
+}
+
+.bal-card .bal-dt h4,.rrrp h4{
+font-size: 14px;
+font-weight: bold;
+}
+.bal-card .bal-dt h3{
+    color:blue;
+    font-size: 18px;
+    font-weight: bold;
+}
+.bal-card .bal-dt p{
+    color:lightslategray;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.bal-card span.view{
+    font-size: 12px;
+    color: blue;
+    font-weight: bold;
+}
+.reports-overview-card p{
+    font-size: 12px;
+    color: blue;
+    font-weight: bold;
+}
