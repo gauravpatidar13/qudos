@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+declare var $:any;
 @Component({
   selector: 'app-home-pending',
   templateUrl: './home-pending.component.html',
@@ -117,5 +117,13 @@ gradient:{
     var chart = new ApexCharts(document.querySelector("#mchart"), this.chartOptions);
     chart.render();
   }
-
+  closeModel(){
+    $('#exa4').css({"display":"none"})
+  }
+  openEmailVerificaionModal(){
+  $('#exa4').css({"display":"block"})
+  }
+  saveModel(){
+    $('#exa4').css({"display":"none"})
+  }
 }

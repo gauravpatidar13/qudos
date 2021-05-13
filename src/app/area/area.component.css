@@ -1,0 +1,107 @@
+::ng-deep .mat-tab-label-active .mat-tab-label-content{
+    font-weight: bold;
+    font-size: 14px;
+    color:blueviolet;
+}
+::ng-deep .my-pagi .ngx-pagination{
+    margin-bottom: 0;
+    text-align: right;
+    position: relative;
+    top: 9px;
+    z-index: 9;
+}
+::ng-deep .my-pagi .current{
+    border-bottom:2px solid blue;
+    background:none!important;
+    color:#000!important;
+}
+::ng-deep .my-pagi li.current{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+::ng-deep .my-pagi ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: monospace;
+}
+::ng-deep .my-pagi ul li.disabled span{
+    font-size: 14px;
+}
+.area-header{
+    padding:8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.area-hea{
+    display: flex;
+}
+.area-hea h1{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: monospace;
+    margin-bottom: 0;
+}
+.area-hea h6{
+    color:blue;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 8px;
+    margin-bottom: 0;
+}
+.area-act{
+    display: flex;
+}
+.area-act select{
+    height: 35px;
+    border:1px solid lightslategray;
+    padding-left: 10px;
+    font-size: 14px;
+    width: 200px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+.btn-add-area{
+    background:#fff;
+    border:1px solid lightslategray;
+    color:#000;
+    font-size: 14px;
+    height: 35px;
+    margin:0 10px;
+    border-radius: 4px;
+    width: 160px;
+}
+.search-wr{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    width: 180px;
+    padding-left: 10px;
+    border-radius: 4px;
+    border:1px solid lightslategray;
+}
+.search-wr input{
+    padding-left: 5px;
+    outline: none;
+    border:none;
+    font-size: 14px;
+   flex-grow: 1;
+}
+thead tr th{
+    font-size: 13px;
+    font-weight: bold;
+    font-family: monospace;
+    color:lightslategray;
+}
+tbody tr td{
+    font-size: 13px;
+}
+select{
+    width: 100px;
+    border: 1px solid lightslategray;
+    height: 24px;
+    font-size: 12px;
+    padding-left: 5px;
+    border-radius: 2px;
+}

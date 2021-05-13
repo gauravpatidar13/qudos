@@ -5,7 +5,29 @@
         <h5>Activate your-Qudos client account</h5>
     </div>
     <div class="pending-steps">
-        <a>Verify your email Address</a>
+        <a (click)="openEmailVerificaionModal()">Verify your email Address</a>
+        <div class="modal" id="exa4" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Email Verification</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ver-email">
+                        <h4>To verify your account,please enter the OTP sent to your email:neilrollon@yahoo.com</h4>
+                    <input type="text" value="0 0 0 0">
+                    <p>Resend OTP</p>
+                </div>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn-action btn-cancel" (click)="closeModel()"
+                            data-dismiss="modal">Cancel</button>
+                        <button type="button" data-dismiss="modal" (click)="saveModel()"
+                            class="btn-action">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <a>Upload required legal documents</a>
         <a>Add payout method</a>
     </div>

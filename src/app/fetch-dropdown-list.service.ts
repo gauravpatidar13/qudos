@@ -19,4 +19,7 @@ export class FetchDropdownListService {
   fetchCarList(){
     return this.http.get('/assets/data/car-list.json');
   }
+  fetchPassengers(){
+    return this.http.get('/assets/data/passengers.json');
+  }
 }

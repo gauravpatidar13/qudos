@@ -13,6 +13,7 @@ import { RidesComponent } from './rides/rides.component';
 import { ReportsComponent } from './reports/reports.component';
 import { SettingsComponent } from './settings/settings.component';
 import { HomePendingComponent } from './home-pending/home-pending.component';
+import { AreaComponent } from './area/area.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'users', component: UsersComponent },
   { path: 'reports', component: ReportsComponent },
   { path: 'rides', component: RidesComponent },
+  { path: 'area', component: AreaComponent },
   { path: 'settings', component: SettingsComponent },
   { path: 'sign-up', component: SignUpComponent }
 ];

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-header-main',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header-main.component.css']
 })
 export class HeaderMainComponent implements OnInit {
-
-  constructor() { }
+activation=true;
+searchTerm;
+  constructor(private ss:SharedService) { }
 
   ngOnInit(): void {
   }
-
+  searchMe(){
+this.ss.sendSearchTerm(this.searchTerm);
+  }
 }

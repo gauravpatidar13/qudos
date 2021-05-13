@@ -1,0 +1,49 @@
+<div class="area">
+    <div class="area-header">
+        <div class="area-hea">
+            <h1>Area List</h1>
+            <h6>Back</h6>
+        </div>
+        <div class="area-act">
+            <select>
+                <option>United States</option>
+            </select>
+            <button class="btn-add-area">Add Area</button>
+            <div class="search-wr">
+                <div>
+                    <img src="/assets/images/search.png">
+                </div>
+                <input type="search" placeholder="Search">
+            </div>
+        </div>
+    </div>
+    <pagination-controls class="my-pagi" (pageChange)="p=$event"></pagination-controls>
+    <mat-tab-group style="margin-top: -38px;">
+        <mat-tab label="Area Entries">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Action</th>
+                        <th>Status</th>
+                        <th>Area ID</th>
+                        <th>Country Name</th>
+                        <th>State Name</th>
+                        <th>Regulation Time</th>
+                        <th>Region Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of ar | paginate:{itemsPerPage:3,currentPage:p}">
+                        <td>{{a}}</td>
+                        <td><select><option>Enable</option><option>Disable</option></select></td>
+                        <td>{{a*2}}</td>
+                        <td>United States</td>
+                        <td>Texas</td>
+                        <td>TNC</td>
+                        <td>8.875</td>
+                    </tr>
+                </tbody>
+            </table>
+        </mat-tab>
+    </mat-tab-group>
+</div>

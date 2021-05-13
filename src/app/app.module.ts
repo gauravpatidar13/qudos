@@ -26,6 +26,8 @@ import { ReportsComponent } from './reports/reports.component';
 import { SettingsComponent } from './settings/settings.component';
 import { CarSearchPipe } from './car-search.pipe';
 import { HomePendingComponent } from './home-pending/home-pending.component';
+import { AreaComponent } from './area/area.component';
+import { PassengersSearchPipe } from './passengers-search.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +48,9 @@ import { HomePendingComponent } from './home-pending/home-pending.component';
     ReportsComponent,
     SettingsComponent,
     CarSearchPipe,
-    HomePendingComponent
+    HomePendingComponent,
+    AreaComponent,
+    PassengersSearchPipe
   ],
   imports: [
     BrowserModule,

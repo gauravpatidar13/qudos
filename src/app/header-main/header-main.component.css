@@ -52,3 +52,27 @@
 .country-wr,.state-wr{
     display: flex;
 }
+.overlay{
+    height: auto;
+    width: 100%;
+}
+.activation-disabled{
+    background:rgba(0,0,0,.7);
+    z-index: 10;
+}
+.nic{
+    position: relative;
+    z-index: -2;
+}
+.nic-dis{
+    z-index: 1!important;
+}
+.overlay h6.warn{
+    text-align: center;
+    font-size: 16px;
+    display: none;
+    font-family: monospace;
+    color:#fff;
+    position: relative;
+    top: 23px;
+}
