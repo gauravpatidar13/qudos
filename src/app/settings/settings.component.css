@@ -1,3 +1,4 @@
+
 .reports .headii h1{
     font-size: 18px;
     font-weight: bold;
@@ -17,6 +18,10 @@
     font-size: 16px;
     font-weight: bold;
     font-family: monospace;
+}
+tbody tr:hover{
+    background:#f3f7f8;
+    cursor: pointer;
 }
 .rp-wr p{
     font-size: 14px;
@@ -83,7 +88,7 @@
     font-family: monospace;
 }
 ::ng-deep mat-tab-group#inner .mat-tab-header{
-margin-top: -70px!important;
+background: #fff;
 border-bottom: none;
 }
 .car-types-hdr{
@@ -139,18 +144,17 @@ tbody tr td{
     max-width: 1030px;
 }
 .modal-title {
-    margin-bottom: 0;
-    line-height: 1.5;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 20px;
+    width: 200px;
+    z-index: 1;
+    padding-left: 30px;
+    position: absolute;
+    top: 14px;
     font-family: monospace;
 }
 .card-footer{
     text-align: right;
 }
 .modal-body{
-    background:#f3f7f8;
     height: 70vh;
 }
 .btn-cancel{
@@ -228,3 +232,28 @@ select#sel1{
     border: 1px solid lightslategray;
 }
 /*part 2 css ends*/
+.table{
+    overflow: hidden;
+}
+
+@media(min-width:768px) and (max-width:991px){
+    .car-types-hdr{
+        padding:6px 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .car-prop,.car-prop2{
+        justify-content: space-around;
+    }
+}
+@media(min-width:567px) and (max-width:767px){
+    .car-types-hdr{
+        padding:6px 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

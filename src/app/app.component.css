@@ -1,5 +1,9 @@
 .wrapper{
     display: flex;
+    justify-content: space-between;
+}
+.wrapper:first-child{
+    min-width: 260px;
 }
 .outlet-wr{
     padding:15px;

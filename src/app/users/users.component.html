@@ -24,7 +24,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let pas of passengers | passengersSearch : searchTerm">
+            <tr *ngFor="let pas of passengers | passengersSearch : searchTerm |  paginate:{itemsPerPage:3,currentPage:p}" >
                 <td>{{pas.pid}}</td>
                 <td><img src="/assets/images/lindsey.png">{{pas.pname}}</td>
                 <td>{{pas.pemail}}</td>

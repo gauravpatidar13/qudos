@@ -23,9 +23,7 @@ export class PassengersComponent implements OnInit, AfterViewInit {
       this.docs = data;
     })
   }
-  change() {
-    console.log('change tab')
-  }
+ 
   ngAfterViewInit(): void {
     let drop = $(".dropdown-menu")[0];
     let lists = $(".dropdown-item");

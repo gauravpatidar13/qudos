@@ -2,9 +2,9 @@
     <div class="headii">
         <h1>Settings</h1>
     </div>
-   <div class="container">
+   <div class="container-fluid">
        <div class="row">
-           <div class="col-xl-4">
+           <div class="col-xl-4 col-lg-6 col-md-6">
                <div class="rp-wr bb br">
                    <h6>General</h6>
                    <p>View all General Settings</p>
@@ -13,7 +13,7 @@
                    <a>Document Type</a>
                </div>
            </div>
-           <div class="col-xl-4">
+           <div class="col-xl-4 col-lg-6 col-md-6">
             <div class="rp-wr bb br">
                 <h6>View Users</h6>
                 <p>View all Users</p>
@@ -22,16 +22,16 @@
                 <a>Admin Users</a>
             </div>
         </div>
-        <div class="col-xl-4">
-            <div class="rp-wr bb">
+        <div class="col-xl-4 col-lg-6 col-md-6">
+            <div class="rp-wr bb br">
                 <h6>Area</h6>
                 <p>View of area</p>
                 <a>Area List</a>
             </div>
         </div>
-       </div>
-       <div class="row">
-        <div class="col-xl-4">
+       
+    
+        <div class="col-xl-4 col-lg-6 col-md-6">
             <div class="rp-wr bb br">
                 <h6>Other Settings</h6>
                 <p>View Other Settings</p>
@@ -39,7 +39,7 @@
                 <a>Payment Setting</a>
             </div>
         </div>
-        <div class="col-xl-4">
+        <div class="col-xl-4 col-lg-6 col-md-6">
          <div class="rp-wr bb br">
              <h6>Car Types,Rates & Option Settings</h6>
              <p>View Car Rates & Option Settings</p>
@@ -48,10 +48,10 @@
          </div>
      </div>
     </div>
-   </div>
+    </div>
 </div>
 <!-- part 2 starts-->
-<div class="car-types-lst" style="display: none;">
+<div class="car-types-lst">
     <div class="car-types-hdr">
         <h1>List of Car Types and Rates</h1>
         <div class="acts">
@@ -59,15 +59,17 @@
             <div class="modal" id="exa3" role="dialog">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <!-- <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Add Car Type</h5>
-                        </div>
+                        </div> -->
+                        <h5 class="modal-title">Add Car Type</h5>
                         <div class="modal-body">
+                           
                             <mat-tab-group id="inner" mat-align-tabs="end">
                                 <mat-tab label="Ride Info and Fare Rates">
-                                    <div class="container-fluid" style="padding-top:20px;">
+                                    <div class="container-fluid" style="padding-top:20px;background:#f3f7f8">
                                         <div class="row">
-                                            <div class="col-xl-6">
+                                            <div class="col-xl-6 col-lg-6">
                                                 <div class="car-prop">
                                                     <label>Car Type Name</label>
                                                     <input type="text" placeholder="Enter Car Type Name">
@@ -148,7 +150,7 @@
 
                                                 </div>
                                             </div>
-                                            <div class="col-xl-6">
+                                            <div class="col-xl-6 col-lg-6">
                                                 <div class="car-prop">
                                                     <label>Capacity</label>
                                                     <select id="sel1">
@@ -201,9 +203,9 @@
                                     </div>
                                 </mat-tab>
                                 <mat-tab label="Other Ride Rates">
-                                    <div class="container-fluid" style="padding-top:20px;">
+                                    <div class="container-fluid" style="padding-top:20px;background:#f3f7f8">
                                         <div class="row">
-                                            <div class="col-xl-6">
+                                            <div class="col-xl-6 col-lg-6">
                                                 <div class="car-prop">
                                                     <label>Black Car Fund (%)</label>
                                                     <select id="sel1">
@@ -247,7 +249,7 @@
                                                 </div>
 
                                             </div>
-                                            <div class="col-xl-6">
+                                            <div class="col-xl-6 col-lg-6">
                                                 <div class="car-prop">
                                                     <label>Minimum Fare-Regular</label>
                                                     <select id="sel1">

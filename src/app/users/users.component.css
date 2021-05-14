@@ -4,9 +4,11 @@
 }
 .users-comp-heading h2{
     font-size: 23px;
+    overflow: hidden;
 }
 .common-header .com-wr h2{
     font-size: 23px;
+    overflow: hidden;
 }
 .common-header .com-wr{
     display: flex;
@@ -17,6 +19,7 @@ color:rgb(49, 127, 221);
 font-size: 16px;
 font-weight: 500;
 margin-left: 20px;
+overflow: hidden;
 cursor: pointer;
 }
 .btn-view-list{
@@ -28,6 +31,8 @@ cursor: pointer;
     font-weight: 700;
     font-family: monospace;
     height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
     padding:0 25px;
 }
 th{
@@ -39,6 +44,7 @@ th{
 .comport{
     margin-top: 30px;
     margin-bottom: 60px;
+    overflow: auto;
 }
 .comport .common-header{
     margin:15px 0px;

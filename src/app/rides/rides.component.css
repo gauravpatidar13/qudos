@@ -28,6 +28,7 @@
 }
 .btn-list-view{
     height: 32px;
+    white-space: nowrap;
 }
 
 .pro-alist .btn-action{
@@ -67,4 +68,22 @@ padding-bottom: 20px;
     font-family: cursive;
     min-width: 285px;
     text-align: left;
+}
+@media (min-width:992px) and (max-width:1199px){
+    .disp-prop h6 {
+        font-size: 12px;
+        font-weight: 100;
+        font-family: cursive;
+        min-width: 210px;
+        text-align: left;
+    }
+}
+@media (min-width:568px) and (max-width:767px){
+    .rides-profile .pro-alist{
+        display: flex;
+        align-items: center;
+        height: 100px;
+        justify-content: space-around;
+        flex-direction: column;
+    }
 }

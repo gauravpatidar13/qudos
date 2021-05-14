@@ -2,14 +2,14 @@
     <div class="overlay" [class.activation-disabled]="!activation">
         <h6 class="warn">please complete activation to get access on these features</h6>
     <div class="container-fluid nic" [class.nic-dis]="activation">
-    <div class="row">
-        <div class="col-xl-7">
+    <div class="row" style="justify-content:flex-end">
+        <div class="col-xl-7 col-lg-6 col-md-6 col-sm-6">
             <div class="search-wr">
                <div> <img src="/assets/images/search.png"></div>
-                <input type="text" placeholder="Search" [(ngModel)]="searchTerm" (keyup)="searchMe()">
+                <input type="search" placeholder="Search" [(ngModel)]="searchTerm" (keyup)="searchMe()">
             </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-8">
             <div class="place-wr">
                 <div class="country-wr">
                     <label>Country</label>
@@ -25,7 +25,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-2">
+        <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4">
             <div class="user-section">
                 <div class="notification-icon-wr">
                     <img src="/assets/images/bell.png">

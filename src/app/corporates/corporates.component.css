@@ -19,6 +19,10 @@ font-size: 24px;
 .corporates-profile .prof-dt h4{
 font-size: 16px;
 }
+.pro-alist{
+    display: flex;
+    flex-wrap: wrap;
+}
 .corporates-profile .pro-act h6{
 font-size: 12px;
 font-weight: bold;
@@ -73,4 +77,9 @@ font-size: 12px;
 font-family: monospace;
 min-width: 50%;
 text-align: left;
+}
+@media (min-width:568px) and (max-width:991px){
+    .pro-alist{
+        height: 100px;
+    }
 }

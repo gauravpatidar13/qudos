@@ -1,39 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .c1h{
     font-size: 14px;
-    font-family: "Poppins";
 }
 select{
     font-size: 14px;
-    font-family: "Poppins";
     border: none;
     color:blue;
     background: transparent;
 }
 select.boldy{
-    font-weight: bold;
     color:#000;
 }
 .c1c{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+}
+.c1c-header{
+    display: flex;
+    justify-content: space-between;
 }
 .c1c-header h6{
     font-size: 14px;
-    font-weight: bold;
     color:#000;
-    font-family: "Poppins"; 
 }
-.c1c-header h5{
+.c1c-bod h5{
     color: rgb(3, 3, 163);
     font-size: 20px;
     font-weight: bold;
-    font-family: "Poppins"; 
+
 }
-.c1c-header p{
+.c1c-bod p{
     font-size: 13px;
     color:lightslategray;
-    font-family: "Poppins"; 
+ 
     margin-bottom: 0;
 }
 .c1c label{
@@ -41,6 +41,7 @@ select.boldy{
     font-weight: bold;
     color: rgb(3, 3, 163);
     cursor: pointer;
+    white-space: nowrap;
 }
 .crd2{
     display: flex;
@@ -54,7 +55,6 @@ select.boldy{
 }
 .crd2 h6{
     font-size: 14px;
-    font-family: "Poppins";
     font-weight: 500;
 }
 
@@ -68,11 +68,9 @@ select{
 }
 .tin h6{
     font-size: 14px;
-    font-family: 'Poppins';
 }
 .tin p{
     font-size: 12px;
-    font-family: "Poppins";
     color:blue;
     font-weight: 500;
     margin-bottom: 0;
@@ -80,8 +78,9 @@ select{
 .cbadge{
     color:#fff;
     font-size: 10px;
-    font-family: "Poppins";
     border:none;
+    min-width: 80px;
+    letter-spacing: 1px;
     border-radius: 6px;
     padding:3px 12px;
 }
@@ -98,6 +97,7 @@ select{
     display: flex;
     justify-content: space-between;
     padding:10px 8px;
+    align-items: baseline;
 }
 .list-item div{
     display: flex;
@@ -105,21 +105,22 @@ select{
 }
 .list-item h6{
     font-size: 14px;
-    margin-bottom: 0;
     margin-right: 15px;
-    display: inline;
-    font-weight: 500;
-    font-family: 'Poppins';
+    margin-bottom: 0;
+    font-weight: 900;
 }
 .list-item p{
-    font-size: 11px;
+    font-size: 12px;
+    font-family: cursive;
     margin-bottom: 0;
-    font-weight: 400;
-    line-height: 18px;
-    font-family: 'Poppins';
 }
 .card-header h4{
-    font-family: "Poppins";
     font-size: 14px;
     font-weight: 500;
+}
+@media (max-width:1199px){
+.list{
+    padding-left: 20px;
+    padding-right: 20px;
+}
 }

@@ -399,3 +399,23 @@ min-width: 134px;
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width:767px){
+    .drivers-profile{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .info-hd .details .detail{
+        display: flex;
+        justify-content: space-between;
+        max-width: 70%;
+        margin:4px 0;
+    }
+    .info-hd{
+       width: 100%;
+    }
+    .notes-wr{
+        overflow: auto;
+    }
+}
