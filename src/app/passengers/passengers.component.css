@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+*{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 ::ng-deep .mat-tab-label{
     width: auto!important;
     height: auto!important;
     padding:10px 15px!important;
     min-width: auto!important;
-}
+} 
 ::ng-deep .mat-ink-bar{
     visibility: visible!important;
 }
@@ -13,9 +16,14 @@
     color:rgb(6, 6, 82);
     font-weight: bold;
 }
+
 .my-pagination{
     position: relative;
     right: 0;
+}
+mat-tab-group{
+    /* overflow: visible; */
+    width: auto;
 }
 .my-pagination .ngx-pagination{
     margin-bottom: 0;
@@ -44,6 +52,7 @@
 .pas-header{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .pas-header .pas-profile{
     display: flex;
@@ -57,9 +66,11 @@
 }
 .pas-profile-info h3{
     font-size: 24px;
+    overflow: hidden;
 }
 .pas-profile-info h4{
     font-size: 18px;
+    overflow: hidden;
 }
 
 .pas-action{
@@ -70,7 +81,14 @@
     font-size: 12px;
     font-weight: bold;
 }
-
+.pas-inv{
+    padding:5px;
+    padding-right: 20px;
+}
+.aas-inv{
+    display: flex;
+    flex-wrap: wrap;
+}
 .pas-inv h3{
     margin:0;
     font-size: 18px;
@@ -87,6 +105,8 @@
     height: 35px;
     border-radius: 4px;
     width: 150px;
+    white-space: nowrap;
+    margin:10px 15px;
 }
 .btn-copy-link{
     border:1px solid lightslategrey;
@@ -96,6 +116,8 @@
     height: 35px;
     border-radius: 4px;
     width: 150px;
+    white-space: nowrap;
+    margin:10px 15px;
 }
 .row{
     margin-top: 15px;
@@ -116,6 +138,7 @@
     font-family: 'Poppins';
     height: 30px;
     font-weight: 400;
+    border-radius: 4px;
     width: 130px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -144,18 +167,25 @@ div.nm-wr{
     margin-top: 30px;
 }
 .modal-title{
-    font-size:24px;
-    font-weight: 400;
-    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 100;
+    font-family: cursive;
+    letter-spacing: 0.2px;
 }
 .nm-wr label{
-    font-size: 18px;
+    font-size: 14px;
+    font-family: cursive;
+}
+.cancel{
+    background:rgb(197,214,241);
 }
 .cur img{
     margin:0px 25px;
 }
 .cur label{
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: monospace;
 }
 /* css start for custom dropdown*/
 .select-box{
@@ -189,10 +219,14 @@ div.nm-wr{
 .search-built-in input{
     outline: none;
     border:none;
+    font-size: 12px;
+    font-family: cursive;
+    width: 100%;
 }
 .select-box .options-container.active{
     opacity: 1;
-    min-height: 360px;
+    min-height: 180px;
+    overflow: auto;
 }
 .select-box .options-container.active + .selected::after{
     transform: rotateX(180deg);
@@ -212,19 +246,17 @@ div.nm-wr{
     padding:5px 10px;
     cursor: pointer;
     font-size: 12px;
-    font-family: 'Poppins';
-    font-weight: bold;
+    font-family: cursive;
 }
 .option label{
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Poppins';
+    font-size: 12px;
+    font-family: cursive;
 
 }
 .option label span{
     margin-left: 6px;
-    font-size: 12px;
-    font-weight: 100;
+    font-size: 10px;
+    font-family: cursive;
 }
 .selected{
     background: #fff;
@@ -233,8 +265,8 @@ div.nm-wr{
     color: #000;
     padding-left: 8px;
     padding-right: 0;
-    font-size: 14px;
-    font-family: 'Poppins';
+    font-size: 12px;
+    font-family: cursive;
     position: relative;
     order: 0;
     padding-top: 8px;
@@ -311,11 +343,11 @@ font-family: monospace;
     font-family: monospace;
 }
 .ac-wr h3{
-    display: inline;
     font-size: 16px;
-    font-family: cursive;
-    font-weight: 900;
-    color:lightslategray;
+    font-family: monospace;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: lightslategray
 }
 .ac-wr h1,.rides-wr h1{
     font-size: 20px;
@@ -333,12 +365,16 @@ font-family: monospace;
     width: 100%;
     position: relative;
 }
+.mdi{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .ac-wr h4{
     display: inline;
     font-size: 14px;
     font-family: monospace;
-    font-weight: 600;
+    font-weight: 500;
     color:#000;
 }
 .ac-wr h4.ref{
@@ -355,13 +391,15 @@ font-family: monospace;
 }
 .rides-inner h3{
     font-size: 16px;
-    font-weight: bold;
-    font-family: cursive;
-    color:lightslategray;
+    font-weight: 500;
+    margin-bottom: 0;
+    font-family: monospace;
+    color: lightslategray;
 }
 .rides-inner h4{
     font-size: 15px;
-    font-weight: 900;
+    font-weight: 500;
+    margin-bottom: 0;
     font-family: monospace;
 }
 .vrule{
@@ -460,6 +498,8 @@ tbody tr:hover{
     flex-direction: column;
     width: 100%;
     position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .pag .my-pagination{
 position: absolute;
@@ -470,10 +510,120 @@ z-index: 4;
 .drop-show{
     display: block;
 }
-@media (max-width:767px){
+@media (max-width:567px){
+    mat-tab-group#mat-tab-group2{
+        /* width:calc(100vw - 30px); */
+        overflow-x: initial;
+        overflow-y: initial;
+        margin-top: 65px;
+    }
+    .rides-wr .rides-inner{
+        display: flex;
+    justify-content: space-between;
+    width: calc(50% - 30px);
+    }
+    .rides-inner h3{
+        font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+    font-family: cursive;
+    color: lightslategray;
+    }
+    .rides-inner h4{
+        font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+    font-family: cursive;
+    }
+    .form-group input{
+    font-size: 14px;
+    font-family: cursive;
+    width: 50%;
+    font-weight: 400;
+    margin: 10px;
+    }
+    .btn-action{
+        margin-left: 0;
+    }
+    .rides-n{
+        flex-wrap: wrap;
+    }
+    .pag .my-pagination{
+        z-index: unset;
+    }
+    .pas-profile-info h3{
+    font-weight: 500;
+    font-size: 18px;
+    font-style: normal;
+    font-family: cursive;
+    overflow: hidden;
+    }
+    .pas-profile-info h4{
+        font-size: 14px;
+        font-family: cursive;
+        line-height: 18px;
+    }
+    .pas-profile img{
+        width: 70px;
+    }
+    .pas-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+    .pas-action{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130px;
+    }
+}
+@media (min-width:568px)and (max-width:767px){
     .pas-header{
         display: flex;
         justify-content: space-between;
-        flex-direction: column;
+        /* flex-direction: column; */
     }
+    .pas-profile img{
+        width: 85px;
+    }
+    .pas-profile-info h3{
+        font-size: 20px;
+    font-family: cursive;
+    }
+    .pas-profile-info h4{
+        font-size: 14px;
+    line-height: 20px;
+    font-family: cursive;
+    }
+    .pas-profile-info{
+        margin-left: 20px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+.aas-inv{
+    flex-direction: column;
+}
+.mdi{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.pas-header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.pas-action{
+    display: flex;
+    height: 136px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.btn-action{
+    margin-left: 0;
+}
 }

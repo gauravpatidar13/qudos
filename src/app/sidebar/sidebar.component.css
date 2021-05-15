@@ -1,6 +1,6 @@
 .sidebar{
-    width: 260px;
-    height: 160vh;
+    height: 300vh;
+    min-width: 240px;
     background:#fff;
     padding:15px;
     border-right: 1px solid lightgray;
@@ -83,4 +83,8 @@ img[alt=""]{
 }
 .menu-item h6 img{
     margin-right: 10px;
+}
+
+@media (min-width:767px) and (max-width:991px){
+ 
 }

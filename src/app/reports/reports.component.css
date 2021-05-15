@@ -1,6 +1,7 @@
 .reports .headii h1{
     font-size: 18px;
     font-weight: bold;
+    padding-left: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .reports .headii{
@@ -38,15 +39,55 @@
     cursor: pointer;
     color:rgba(67, 67, 139, 0.822);
 }
-.bt{
-    border-top: 1px solid lightslategray;
-}
-.bb{
+
+.bbr{
     border-bottom: 1px solid lightslategray;
 }
-.bl{
-    border-left: 1px solid lightslategray;
+.bb,.sbb{
+    border-bottom: 1px solid lightslategray;
 }
-.br{
-    border-right: 1px solid lightslategray;
+.br,.fbr{
+    border-right:1px solid lightslategray;   
+}
+
+.med{
+    border-left:1px solid lightslategray;
+    border-right:1px solid lightslategray;
+}
+.med2{
+    border-left:1px solid lightslategray;
+    border-right:1px solid lightslategray;
+}
+@media (min-width:768px) and (max-width:991px){
+    .br{
+        border-right:1px solid lightslategray;   
+    }
+    .med{
+        border-right-color: transparent;
+    }
+    .med2{
+        border-left-color: transparent;
+    }
+    .fbr{
+        border-right-color: transparent;
+    }
+}
+@media (max-width:567px){
+    .br{
+        border-right-color: transparent;
+    }
+    .med2{
+        border:none;
+    }
+    .fbr{
+        border-top: 1px solid lightslategray;
+        border-right-color: transparent;
+    }
+    .med{
+        border:none;
+        border-bottom: 1px solid lightslategray;
+    }
+    .sbb{
+        border-bottom: none;
+    }
 }

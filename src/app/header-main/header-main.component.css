@@ -2,7 +2,7 @@
     border-bottom: 1px solid lightslategrey;
     padding-top: 8px;
     padding-bottom: 8px;
-    width: calc(100vw - 280px);
+    
 }
 .search-wr{
     border-right: 1px solid lightgray;
@@ -60,6 +60,9 @@
     background:rgba(0,0,0,.7);
     z-index: 10;
 }
+.activation-dis{
+    display: block!important;
+}
 .nic{
     position: relative;
     z-index: -2;
@@ -70,15 +73,54 @@
 .overlay h6.warn{
     text-align: center;
     font-size: 16px;
-    display: block;
+    display: none;
     width: calc(100% - 280px);
     font-family: monospace;
     color:#fff;
     top:15px;
     position: absolute;
 }
+.menu-wrapper{
+    display: none;
+    cursor: pointer;
+    z-index: 9;
+}
 @media(max-width:991px){
     .place-wr{
         border-right:none;
+    }
+}
+@media (max-width:767px){
+    .menu-wrapper{
+        display: block;
+        position: absolute;
+        top:20px;
+        left:15px
+    }
+   .hj{
+       flex-direction: row;
+   } 
+   .place-wr{
+       flex-wrap: wrap;
+       flex-direction: column;
+   }
+   .place-wr .country-wr{
+       margin:10px 0;
+   }
+   .place-wr .state-wr{
+       margin:10px 0;
+   }
+   
+   .o1{order: 1;}
+   .o0{order: 0;position: relative;top:0}
+   .o2{order: 2;position: absolute;right: 0;top: 40px;}
+}
+@media (max-width:567px){
+    .place-wr{
+        flex-wrap: unset;
+        flex-direction: row;
+    }
+    .o2{
+        position: unset;
     }
 }

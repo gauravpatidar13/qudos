@@ -82,4 +82,7 @@ text-align: left;
     .pro-alist{
         height: 100px;
     }
+    .btn-action{
+        margin-left: 2px;
+    }
 }

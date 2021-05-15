@@ -2,88 +2,55 @@
     <div class="sidebar-header">
         <h4>Qudos Technologies Inc</h4>
     </div>
-    <div class="sidebar-menu">
+    <div class="sidebar-menu" (window:resize)="onResize($event)">
         <div class="menu-top">
-            <div class="menu-item" routerLink="/home" routerLinkActive="selectedLink">
+            <div class="menu-item" (click)="closeMenu()" routerLink="/home" routerLinkActive="selectedLink">
                 <h6><img src="/assets/images/home.png">Home</h6>
             </div>
-            <div class="menu-item">
-                <h6><img src="/assets/images/heat-map.png">Heat Map</h6>
+            <div class="menu-item" (click)="closeMenu()" routerLink="/home-pending" [routerLinkActiveOptions]="{exact:true}"
+            routerLinkActive="selectedLink">
+                <h6><img src="/assets/images/heat-map.png">Home Pending</h6>
             </div>
         </div>
         <div class="check-border"></div>
         <div class="menu-middle">
-            <div class="menu-item" routerLink="/users" [routerLinkActiveOptions]="{exact:true}"
+            <div class="menu-item" (click)="closeMenu()" routerLink="/users" [routerLinkActiveOptions]="{exact:true}"
                 routerLinkActive="selectedLink">
                 <h6><img src="/assets/images/user-outline.png">Users</h6>
             </div>
-            <div class="menu-item" routerLink="users/passengers" [routerLinkActiveOptions]="{exact:true}"
+            <div class="menu-item" (click)="closeMenu()" routerLink="users/passengers" [routerLinkActiveOptions]="{exact:true}"
                 routerLinkActive="selectedLink">
                 <h6><img alt="">Passengers</h6>
             </div>
-            <div class="menu-item" routerLink="users/drivers" [routerLinkActiveOptions]="{exact:true}"
+            <div class="menu-item" (click)="closeMenu()" routerLink="users/drivers" [routerLinkActiveOptions]="{exact:true}"
                 routerLinkActive="selectedLink">
                 <h6><img alt="">Drivers</h6>
             </div>
-            <div class="menu-item" routerLink="users/affilates" [routerLinkActiveOptions]="{exact:true}"
+            <div class="menu-item" (click)="closeMenu()" routerLink="users/affilates" [routerLinkActiveOptions]="{exact:true}"
                 routerLinkActive="selectedLink">
                 <h6><img alt="">Affiliates</h6>
             </div>
-            <div class="menu-item" routerLink="users/corporates" [routerLinkActiveOptions]="{exact:true}"
+            <div class="menu-item" (click)="closeMenu()" routerLink="users/corporates" [routerLinkActiveOptions]="{exact:true}"
                 routerLinkActive="selectedLink">
                 <h6><img alt="">Corporates</h6>
             </div>
-            <div class="menu-item" routerLink="rides" [routerLinkActiveOptions]="{exact:true}"
+            <div class="menu-item" (click)="closeMenu()" routerLink="rides" [routerLinkActiveOptions]="{exact:true}"
             routerLinkActive="selectedLink">
                 <h6><img src="/assets/images/rides.png">Rides</h6>
             </div>
-            <div class="menu-item">
-                <h6><img src="/assets/images/payments.png">Payments</h6>
-            </div>
-            <div class="menu-item" routerLink="payments/custom-payout" [routerLinkActiveOptions]="{exact:true}"
+            <div class="menu-item" (click)="closeMenu()" routerLink="payments/custom-payout" [routerLinkActiveOptions]="{exact:true}"
                 routerLinkActive="selectedLink">
                 <h6><img alt="">Custom payout</h6>
             </div>
-            <div class="menu-item" routerLink="payments/custom-charge" [routerLinkActiveOptions]="{exact:true}"
-                routerLinkActive="selectedLink">
-                <h6><img alt="">Custom Charge</h6>
-            </div>
-            <div class="menu-item" routerLink="payments/disputes" [routerLinkActiveOptions]="{exact:true}"
-                routerLinkActive="selectedLink">
-                <h6><img alt="">Disputes</h6>
-            </div>
-            <div class="menu-item" routerLink="payments/revenue" [routerLinkActiveOptions]="{exact:true}"
-                routerLinkActive="selectedLink">
-                <h6><img alt="">Revenue</h6>
-            </div>
-            <div class="menu-item">
-                <h6><img src="/assets/images/promo.png">Promo and Offers</h6>
-            </div>
-            <div class="menu-item">
-                <h6><img src="/assets/images/rides.png">Virtual Orientation</h6>
-            </div>
-            <div class="menu-item">
-                <h6><img src="/assets/images/analytics.png">Analytics</h6>
-            </div>
-            <div class="menu-item" routerLink="reports" [routerLinkActiveOptions]="{exact:true}"
+            <div class="menu-item" (click)="closeMenu()" routerLink="reports" [routerLinkActiveOptions]="{exact:true}"
             routerLinkActive="selectedLink">
                 <h6><img src="/assets/images/reports.png">Reports</h6>
             </div>
-            <div class="menu-item">
-                <h6><img src="/assets/images/tickets.png">Tickets</h6>
-            </div>
-            <div class="menu-item">
-                <h6><img src="/assets/images/points.png">Point System</h6>
-            </div>
         </div>
         <div class="chk-bor">
-
         </div>
         <div class="menu-bottom">
-            <div class="menu-item">
-                <h6><img src="/assets/images/audit.png">Audit Logs</h6>
-            </div>
-            <div class="menu-item" routerLink="settings" [routerLinkActiveOptions]="{exact:true}"
+            <div class="menu-item" (click)="closeMenu()" routerLink="settings" [routerLinkActiveOptions]="{exact:true}"
             routerLinkActive="selectedLink">
                 <h6><img src="/assets/images/settings.png"> Settings </h6>
             </div>

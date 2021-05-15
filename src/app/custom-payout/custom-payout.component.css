@@ -83,3 +83,39 @@ flex-direction: column;
     justify-content: space-between;
     margin:5px 0;
 }
+@media (min-width:992px) and (max-width:1199px){
+    .disp-prop h6,.pay-prop h6{
+        font-size: 12px;
+        font-weight: 100;
+        font-family: cursive;
+        min-width: 230px;
+        text-align: left;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .disp-prop h6,.pay-prop h6{
+        font-size: 12px;
+        font-weight: 100;
+        font-family: cursive;
+        min-width: 270px;
+        text-align: left;
+    }
+}
+@media (min-width:568px) and (max-width:767px){
+    .disp-prop h6,.pay-prop h6{
+        font-size: 12px;
+        font-weight: 100;
+        font-family: cursive;
+        min-width: 100px;
+        text-align: left;
+    }
+}
+@media (max-width:567px){
+    .disp-prop h6,.pay-prop h6{   
+    font-size: 12px;
+    font-weight: 100;
+    font-family: cursive;
+    min-width: auto;
+    text-align: left;
+} 
+}

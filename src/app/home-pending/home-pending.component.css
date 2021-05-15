@@ -48,6 +48,9 @@ font-family: monospace;
     font-family: monospace;
     color:rgb(14, 181, 231)
 }
+.slld{
+    display: flex;
+}
 .gross-volumn-chart-wr .hddr{
     display: flex;
     justify-content: space-between;

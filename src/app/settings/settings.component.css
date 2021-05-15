@@ -2,6 +2,7 @@
 .reports .headii h1{
     font-size: 18px;
     font-weight: bold;
+    padding-left: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .reports .headii{
@@ -235,7 +236,24 @@ select#sel1{
 .table{
     overflow: hidden;
 }
+.bbr{
+    border-bottom: 1px solid lightslategray;
+}
+.bb,.sbb{
+    border-bottom: 1px solid lightslategray;
+}
+.br,.fbr{
+    border-right:1px solid lightslategray;   
+}
 
+.med{
+    border-left:1px solid lightslategray;
+    border-right:1px solid lightslategray;
+}
+.med2{
+    border-left:1px solid lightslategray;
+    border-right:1px solid lightslategray;
+}
 @media(min-width:768px) and (max-width:991px){
     .car-types-hdr{
         padding:6px 8px;
@@ -255,5 +273,9 @@ select#sel1{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+    }
+    .med{
+        border-left-color: transparent;
+        border-right-color: transparent;
     }
 }

@@ -1,3 +1,4 @@
+<div class="zxcv">
 <div class="drivers-profile">
     <div class="d-flex">
         <div class="prof">
@@ -16,26 +17,11 @@
         <h6>Profile ID: 4555</h6>
     </div>
 </div>
-<div class="car-base">
-    <div class="car-base-selected" (click)="openCarbaseDropdown()">
-        <h6> Elite Car Based LLC</h6>
-    </div>
-    <div class="car-base-opts-wr" style="display: none;">
-        <div class="car-base-search-wr">
-            <input type="search" placeholder="Search Car Base" (keyup)="hdlKey()" [(ngModel)]="sTerm">
-            <div>
-                <img src="/assets/images/search.png">
-            </div>
-        </div>
-        <div class="car-base-opts" *ngFor="let drop of drops | carBaseSearch : sTerm">
-            <h6>{{drop.cmain}}<span [class.pending]="drop.status=='Pending'">{{drop.status}}</span></h6>
-        </div>
-    </div>
-</div>
 <mat-tab-group>
     <mat-tab label="Driver">
         <div class="driver-content">
-            <mat-tab-group>
+            <div class="yes-y">
+            <mat-tab-group style="width: 100%;">
                 <mat-tab label="Driver Info">
                     <div class="driver-info">
                         <div class="drv">
@@ -240,7 +226,24 @@
                     </div>
                 </mat-tab>
             </mat-tab-group>
+            <div class="car-base">
+                <div class="car-base-selected" (click)="openCarbaseDropdown()">
+                    <h6> Elite Car Based LLC</h6>
+                </div>
+                <div class="car-base-opts-wr" style="display: none;">
+                    <div class="car-base-search-wr">
+                        <input type="search" placeholder="Search Car Base" (keyup)="hdlKey()" [(ngModel)]="sTerm">
+                        <div>
+                            <img src="/assets/images/search.png">
+                        </div>
+                    </div>
+                    <div class="car-base-opts" *ngFor="let drop of drops | carBaseSearch : sTerm">
+                        <h6>{{drop.cmain}}<span [class.pending]="drop.status=='Pending'">{{drop.status}}</span></h6>
+                    </div>
+                </div>
+            </div>
         </div>
+       </div>
     </mat-tab>
     <mat-tab label="Car">
       <mat-tab-group>
@@ -568,3 +571,4 @@
         </div>
     </mat-tab>
 </mat-tab-group>
+</div>

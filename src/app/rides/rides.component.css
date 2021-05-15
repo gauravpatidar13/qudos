@@ -86,4 +86,11 @@ padding-bottom: 20px;
         justify-content: space-around;
         flex-direction: column;
     }
+    .disp-prop h6{
+        font-size: 12px;
+        font-weight: 100;
+        font-family: cursive;
+        min-width: auto;
+        text-align: left;
+    }
 }

@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 *{
     margin:0;padding:0;box-sizing: border-box;
-    overflow-y: auto;
-    overflow-x: hidden;
+    /* overflow-y: auto; 
+     overflow-x: hidden; */
 }
 h1,h2,h3,h4,h5,h6,p{
     overflow: hidden;
@@ -17,7 +17,7 @@ body { margin: 0; font-family: monospace }
     color:gray;
     font-weight: 700;
     font-family: monospace;
-    height: 40px;
+    height: 35px;
     white-space: nowrap;
     padding:0 25px;
 }
@@ -34,4 +34,7 @@ body { margin: 0; font-family: monospace }
     border-radius: 4px;
     background:rgb(40,108,189);
     height: 35px;
+}
+.zxcv{
+    padding:15px;
 }
