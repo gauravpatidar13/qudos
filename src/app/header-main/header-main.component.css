@@ -35,14 +35,14 @@
 .place-wr label{
     font-size: 14px;
     font-weight: 400;
-    font-family: 'Poppins';
 }
 .place-wr select{
-    border:none;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: 'Poppins';
-    color:rgb(71,130,202)
+    border: none;
+    font-size: 12px;
+    background: transparent;
+    font-weight: 600;
+    font-family: cursive;
+    color: rgb(71,130,202);
 }
 .user-section{
     display: flex;

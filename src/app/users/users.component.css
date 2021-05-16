@@ -68,3 +68,12 @@ tbody tr:hover{
 .comport:last-child{
     margin-bottom: 0;
 }
+@media (max-width:567px){
+    .btn-view-list{
+        font-size: 13px;
+        overflow: unset;
+    }
+    .common-header .com-wr{
+        flex-wrap: wrap;
+    }
+}

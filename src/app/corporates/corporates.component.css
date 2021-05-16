@@ -55,10 +55,15 @@ font-size: 18px;
 font-weight: bold;
 margin-bottom: 0;
 }
-.feed-details .feed-hd .feed-h h4 span{
-    color:blue;
-    margin-left: 20px;
-    font-size: 14px;
+.feed-h{
+    display: flex;
+}
+.feed-details .feed-hd .feed-h span{
+    color: blue;
+     margin-left: 20px; 
+    cursor: pointer;
+    font-size: 13px;
+    font-family: monospace;
     font-weight: normal;
 }
 .feed-prop{
@@ -77,6 +82,28 @@ font-size: 12px;
 font-family: monospace;
 min-width: 50%;
 text-align: left;
+}
+@media (max-width:567px){
+    .pro-alist{
+        height: 110px;
+    }
+    .btn-action{
+        margin-left: 0;
+    }
+   .corporates-profile .prof-dt{
+        margin-left: 0;
+    }
+    .feed-h{
+        flex-direction: column;
+    }
+    .feed-details .feed-hd .feed-h span{
+        color: blue;
+        margin-left: 0px; 
+        cursor: pointer;
+        font-size: 13px;
+        font-family: monospace;
+        font-weight: normal;
+    }
 }
 @media (min-width:568px) and (max-width:991px){
     .pro-alist{

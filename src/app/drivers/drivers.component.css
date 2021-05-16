@@ -425,3 +425,11 @@ min-width: 134px;
         overflow: auto;
     }
 }
+@media (max-width:567px){
+    .car-base{
+        top:52px;
+    }
+    ::ng-deep mat-tab-group#mat-tab-group3 .mat-tab-header{
+        padding-bottom: 50px;
+    }
+}

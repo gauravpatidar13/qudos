@@ -53,7 +53,7 @@ tbody tr:hover{
 .bl{
     border-left: 1px solid lightslategray;
 }
-.br{
+.br,.sbr{
     border-right: 1px solid lightslategray;
 }
 /*part 2 css starts*/
@@ -266,7 +266,7 @@ select#sel1{
         justify-content: space-around;
     }
 }
-@media(min-width:567px) and (max-width:767px){
+@media(min-width:576px) and (max-width:767px){
     .car-types-hdr{
         padding:6px 8px;
         display: flex;
@@ -275,7 +275,32 @@ select#sel1{
         align-items: center;
     }
     .med{
-        border-left-color: transparent;
         border-right-color: transparent;
     }
+    .sbr{
+        border-right: none;
+    }
+}
+@media (max-width:575px){
+.med{
+    border-left-color: transparent;
+    border-right-color:transparent ;
+}
+.sbr{
+    border-right: none;
+}
+.br{
+    border-right: none;
+}
+.car-types-hdr{
+    height: 100px;
+    flex-wrap: wrap;
+}
+.car-types-hdr .acts{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
 }
